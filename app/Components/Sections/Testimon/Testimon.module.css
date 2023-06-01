@@ -1,0 +1,239 @@
+.testimonwrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+
+
+.tstchild{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1250px;
+    height: 400px;
+}
+
+
+.titlewrapper{
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: #1B3E1C;
+    
+}
+
+.Title{
+    font-size: 50px;
+    font-weight: 600;
+    margin-right: 20px;
+}
+.Titlede {
+    height: 3px;
+    width: 100px;
+    margin-top: 10px;
+    background-color: #1B3E1C;
+}
+
+.testcont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 400px;
+    height: 260px;
+}
+
+.leftcont span{
+    color: #1B3E1C;
+    font-size: 55px;
+    font-weight: 600;
+}
+
+.leftslidtap{
+    display: flex;
+    justify-content: space-between;
+    width: 110px;
+    
+}
+
+
+.lefttic, .righttic{
+    background-color: #1B3E1C;
+    position: relative;
+    height: 30px;
+    width: 30px;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.lefttic:hover, .righttic:hover{
+    background-color: #971B1E;
+    box-shadow: 0px 0px 20px 0px #a90b0b69;
+}
+
+
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 600px;
+    overflow: hidden;
+}
+
+.hero2{
+    width: 600px;
+}
+
+.slidercard{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #1B3E1C;
+    border-radius: 25px;
+    padding: 40px 45px;
+    height: 190px;
+}
+
+.cardbottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 240px;
+}
+
+.cardtop p{
+    color: #EFFFEF;
+    font-size: 21px;
+    font-weight: 200;
+    line-height: 1.28;
+}
+
+.botimg{
+    position: relative;
+    height: 52px;
+    width: 52px;
+}
+
+.clientname{
+    color: #EFFFEF;
+}
+
+.clientname span{
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    
+}
+
+.clientname p{
+    font-weight: 200;
+    margin-top: 4px;
+}
+
+@media (max-width: 860px){
+
+    .testimonwrapper{
+
+        height: fit-content;
+    }
+
+    .tstchild{
+        height: fit-content;
+        width: 90%;
+        padding: 100px 0;
+    }
+
+    .Title{
+        font-size: 38px;
+    }
+    .Titlewrapper{
+        margin-bottom: 20px;
+    }
+    .Titlede{
+        margin-top: 6px;
+        width: 80px;
+    }
+
+    .testcont{
+        flex-direction: column;
+    }
+
+    .left{
+        width: 100%;
+        height: fit-content;
+        margin-top: 75px;
+    }
+
+    .leftcont span{
+        font-size: 40px;
+    }
+
+    .lefttic, .righttic{
+        height: 20px;
+        width: 20px;
+    }
+
+    .leftslidtap{
+        margin-top: 20px;
+        width: 90px;
+    }
+
+    .right , .slidercard{
+        width: auto;
+    }
+
+    .right{
+        margin-top: 40px;
+    }
+    .hero2{
+        width: 375px;
+    }
+
+    .slidercard{
+        border-radius: 15px;
+        padding: 20px 20px;
+        height: auto;
+    }
+
+    .cardtop p{ 
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 21px;
+        letter-spacing: 1px;
+    }
+    .botimg{
+        height: auto;
+        width: 40px;
+    }
+    .cardbottom{
+        width: fit-content;
+        margin-top: 25px;
+    }
+    .clientname{
+        margin-left: 15px;
+    }
+    .clientname span{
+        font-size: 17px;
+        font-weight: 500;
+        letter-spacing: 1.5px;
+    }
+    
+    .clientname p{
+        font-size: 14px;
+        font-weight: 300;
+        margin-top: 2px;
+    }
+    
+}

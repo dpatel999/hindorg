@@ -1,0 +1,33 @@
+.mainwrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80PX;
+}
+.chidwrapper{
+    width: 800px;
+    height: fit-content;
+}
+
+.contM{
+    display: none;
+}
+
+@media (max-width: 860px) {
+
+    .mainwrapper{
+        padding: 90px 0;
+        padding-bottom: 20px;
+        background-color: #EFFFEF;
+    }
+
+    .chidwrapper{
+        width: 100%;
+    }
+    .contF{
+        display: none;
+    }
+    .contM{
+        display: block;
+    }
+}

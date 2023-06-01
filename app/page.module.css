@@ -1,0 +1,222 @@
+.headwrapper{
+    display: flex;
+    justify-content: center;
+    padding: 15px 0 0 0;
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0px;
+    z-index: 50;
+}
+
+.maxwidth{
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    width: 91.5vw;
+    background-color: #EFFFEF;
+    border-radius: 10px;
+    box-shadow: 0px 5px 16px #0000001e inset;
+}
+
+.main{
+    height: 70px;
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 25px;
+}
+
+
+.navlink{
+    width: 100px;
+    min-width: 40%;
+}
+
+.navlink .active{
+    color: #971B1E;
+    text-decoration: underline;
+}
+.navlink ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navlink ul a:hover li{
+    color: #971B1E !important;
+    text-decoration: underline !important;
+}
+
+.main a:hover .calltoact{
+    background-color: transparent !important;
+    border-color: #1B3E1C !important;
+    color: #1B3E1C !important;
+}
+
+.navlink ul li{
+    color: #1B3E1C;
+    font-size: 22px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.navlink ul a{
+    text-decoration: none;
+    color: #1B3E1C;
+}
+
+.navlinkm{
+    display: none;
+    pointer-events: none;
+}
+
+.calltoact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    color: #EFFFEF;
+    background-color: #1B3E1C;
+    padding: 8px 20px;
+    font-size: 22px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    cursor: pointer;
+    border: 2px solid transparent;
+    
+}
+
+.brand{
+    width: 180px;
+    cursor: pointer;
+}
+
+.hamburger{
+    display: none;
+}
+
+@media (max-width: 860px) {
+    .headwrapper{
+        backdrop-filter: none;
+        padding: 0;
+        position: sticky;
+        top: 0px;
+    }
+    .main{
+
+        padding: 0px 30px;
+        position: relative;
+        z-index: 9999;
+    }
+    .maxwidth{
+        border-radius: 0;
+        box-shadow: 0px 5px 16px #0000001e;
+        width: 100vw;
+    }
+
+    .navlink{
+        display: none;
+   
+    }
+
+    .navlinkm{
+        display: flex;
+        transition: all .3s ease-in-out;
+        opacity: 0;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        background-color: #EFFFEF;
+        top: 20px;
+        left: 0px;
+        height: fit-content;
+        width: 100vw;
+        border-radius: 0 0 10px 10px;
+        border-bottom: 2px solid #1B3E1C;
+        animation: moveup .3s ease-in-out forwards;
+        z-index: -100;
+    }
+    .open{
+        opacity: 1;
+        pointer-events: auto;
+        animation: movedown .3s ease-in-out forwards;
+
+    }
+
+   
+    .navlinkm ul li{
+        color: #1B3E1C;
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+        padding: 12px 0;
+        width: 90vw;
+        transition: all .3s ease-in-out;
+        border-bottom: 0.5px solid #1B3E1C;
+        text-align: center;
+    }
+
+    .navlinkm ul li a{
+        color: #1B3E1C;
+    }
+
+
+    .navlinkm ul li:hover{
+        color: #971B1E;
+        text-decoration: underline;
+    }
+
+
+    @keyframes movedown {
+        0%{
+            opacity: 0;
+            transform: translateY(0px);
+        }
+        100%{
+            opacity: 1;
+            transform: translateY(50px);
+        }
+    }
+    @keyframes moveup {
+        0%{
+            opacity: 1;
+            transform: translateY(50px);
+        }
+        100%{
+            opacity: 0;
+            transform: translateY(0px);
+        }
+    }
+
+
+    .brand{
+        width: 140px;
+        cursor: pointer;
+    }
+
+    .hamburger{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+        height: 20px;
+        z-index: 10000;
+        position: absolute;
+        right: 30px;
+    }
+
+    .hamburger span{
+        background-color: #1B3E1C;
+        width: 25px;
+        height: 2.5px;
+        transform-origin: left;
+        transition: all .3s ease-in-out;
+    }
+
+    .calltoact{
+        display: none;
+    }
+
+}

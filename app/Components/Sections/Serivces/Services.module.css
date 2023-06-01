@@ -1,0 +1,195 @@
+.SerWrapper{
+    margin-top: 100px;
+    height: fit-content;
+    background-color: #1B3E1C;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 80px;
+}
+
+.childwrapper{
+    width: 1250px;
+}
+
+.fixwrapper{
+    background-color: #EFFFEF;
+    box-shadow: 0px 5px 16px #0000001e inset;
+    margin-top: -90px;
+    border-radius: 20px;
+}
+
+.fixedbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 120px;
+}
+
+.cust, .loca, .ship, .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cust span, .loca span, .ship span, .box span{
+    margin-top: 10px;
+    font-size: 40px;
+    font-weight: 600;
+    color: #1B3E1C;
+}
+.subwrapper{
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.titlewrapper{
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: #EFFFEF;
+    
+}
+
+.Title{
+    font-size: 50px;
+    font-weight: 500;
+    margin-right: 20px;
+    letter-spacing: 1.5px;
+}
+.Titlede {
+    height: 3px;
+    width: 100px;
+    margin-top: 10px;
+    background-color: #EFFFEF;
+}
+
+.custimgm, .locaimgm, .shipimgm, .boximgm{
+    display: none;
+}
+
+.fixedbarm{
+    display: none;
+}
+
+.bottom{
+    display: flex;
+    height: 550px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+
+
+
+
+@media (max-width: 860px){
+    .SerWrapper{
+    height: 90%;
+    }
+    .childwrapper{
+        width: 90%;
+    }
+
+    .fixedbar{
+        display: none;
+    }
+    .fixedbarm{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        padding: 30px 70px;
+        border-radius: 20px;
+    }
+    .fixwrapper{
+        margin-top: -160px;
+    }
+
+
+    .cust , .loca , .ship , .box {
+        padding: 10px;  
+        width: max-content;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+
+
+    .custimg, .locaimg, .shipimg, .boximg{
+        display: none;
+    }
+
+    .custimgm, .locaimgm, .shipimgm, .boximgm{
+        display: block;
+        position: relative;
+        height: auto;
+        width: 25px;
+    }
+    .shipimgm{
+        width: 32px;
+    }
+    .cust span, .loca span, .ship span, .box span{
+        margin-top: 8px;
+        font-size: 30px;
+        font-weight: 600;
+        color: #1B3E1C;
+    }
+
+    .cust p, .loca p, .ship p, .box p{
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .ship{
+        padding: 10px 15px;
+    }
+    .ship span{
+        margin-top: 10px;
+    }
+
+    .box{
+        padding: 10px 11.6px;
+    }
+
+    .fixtop{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .fixbot{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .Title{
+        font-size: 38px;
+    }
+    .Titlewrapper{
+        margin-bottom: 20px;
+    }
+    .Titlede{
+        margin-top: 6px;
+        width: 80px;
+    }
+    .bottom{
+        height: 1600px;
+        justify-content: center;
+    }
+  
+}

@@ -1,0 +1,156 @@
+.mainwrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.childwqrapper{
+    background-color: #1B3E1C;
+    height: 180px;
+    width: 95vw;
+    display: flex;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contchildwrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 1200px;
+    height: 140px;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navlinks ul{
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+}
+
+
+.navlinks ul a{
+    text-decoration: none;
+}
+
+
+
+
+.navlinks ul li{
+    color: #EFFFEF;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.centerde{
+    background-color: #EFFFEF;
+    height: 1px;
+}
+
+.botttom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.botttom span{
+    color: #EFFFEF;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.socialwrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 150px;
+}
+
+.socialimg{
+    position: relative;
+    height: 35px;
+    width: 35px;
+    border: 1px solid #EFFFEF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.brandsvgm{
+    display: none;
+}
+
+@media (max-width: 860px){
+
+    .mainwrapper{ 
+        background-image: linear-gradient( #EFFFEF 0%, #EFFFEF 65%, #ffffff);
+        height: fit-content;
+    }
+
+
+    .childwqrapper{
+        width: 95%;
+        height: auto;
+        padding: 30px 0;
+        border-radius: 12px;
+        margin-bottom: 10px;
+    }
+    .contchildwrapper{
+        width: 90%;
+        height: fit-content;
+    }
+
+    .brandsvg{
+        display: none;
+    }
+
+    .brandsvgm{
+        display: block;
+        height: auto;
+        width: 50%;
+        margin-bottom: 35px;
+    }
+
+    .top{
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .botttom{
+        flex-direction: column-reverse;
+    }
+
+    .navlinks ul{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navlinks ul li{
+        margin-bottom: 20px;
+    }
+
+    .centerde{
+        margin-top: 10px;
+        margin-bottom: 25px;
+    }
+
+    .socialwrapper{
+        width: 60%;
+        margin-bottom: 20px;
+    }
+
+    .socialimg{
+        height: 18px;
+        width: 18px;
+        padding: 9px;
+    }
+}

@@ -1,0 +1,155 @@
+.cardwrapper{
+    display: flex;
+    background-color: #EFFFEF;
+    width: 28vw;
+    height: 40px;
+    border-radius: 10px;
+    padding: 10px 5px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #EFFFEF;
+    transition: background-color .4s ease-in-out;
+}
+
+.cardwrapper span{
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    transition: font-size .4s ease-in-out;
+}
+
+.cardwrapper:hover{
+    background-color: #971b1d;
+    cursor: pointer;
+}
+
+.cardwrapper:hover span{
+    color: #EFFFEF;
+    font-size: 18.5px;
+}
+
+.fullback{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    background-color: #0000008e;
+    top: 0;
+    right: 0;
+    z-index: 5000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    background-color: #EFFFEF;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.content p{
+    margin-bottom: 10px;
+    color: #1B3E1C;
+}
+
+.content span{
+    font-size: 20px;
+    font-weight: 500;
+    color: #1B3E1C;
+    display: flex;
+    text-decoration: underline;
+}
+
+.close{
+    position: absolute;
+    bottom: 0;
+    right: 5;
+    background-color: #1B3E1C;
+    padding: 10px 30px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.close span{
+    font-size: 20px;
+    color: #EFFFEF;
+    font-weight: 300;
+}
+
+.uline{
+    margin: 10px 0;
+    background-color: #1B3E1C;
+    height: 1px;
+}
+
+.descinner{
+    margin-top: 20px;
+    width: 100%;
+}
+
+.titlewsvg svg{
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+
+.titlewsvg{
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 860px){
+    .cardwrapper{
+        width: 92%;
+        padding: 10px 30px;
+    }
+
+    .cardwrapper span{
+        font-size: 16px;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .close{
+        position: absolute;
+        bottom: 0;
+        right: 5;
+        background-color: #1B3E1C;
+        padding: 10px 30px;
+        margin-bottom: 80px;
+        border-radius: 10px;
+    }
+
+    .close span{
+        font-size: 18px;
+        color: #EFFFEF;
+        font-weight: 500;
+    }
+
+    .content span{
+        font-size: 18px;
+        font-weight: 500;
+        color: #1B3E1C;
+        display: flex;
+        text-decoration: underline;
+    }
+
+    .descinner{
+        margin-top: 20px;
+    }
+    .titlewsvg{
+        display: flex;
+        align-items: center;
+    }
+
+    .content{
+        width: 85%;
+        background-color: #EFFFEF;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .fullback{
+        background-color: #000000ab;
+    }
+}

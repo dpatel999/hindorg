@@ -1,0 +1,279 @@
+.left a{
+    text-decoration: none;
+}
+
+.left a:hover span{
+    text-decoration: underline;
+    color: #971B1E;
+}
+
+.left a:hover .comanconticon{
+    background-color: #971B1E;
+    box-shadow: 0px 0px 20px 0px #a90b0b69;
+}
+
+
+
+.Social a:hover .socialimg{
+    border-color: #971B1E;
+    background-color: #EFFFEF;
+    box-shadow: 1px 3px 33px 0px #a90b0b69;
+}
+
+.mainwrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 580px;
+}
+
+.childwrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 1250px;
+    height: 450px;
+}
+
+.titlewrapper{
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: #1B3E1C;
+    
+}
+
+.Title{
+    font-size: 50px;
+    font-weight: 600;
+    margin-right: 20px;
+}
+.Titlede {
+    height: 3px;
+    width: 100px;
+    margin-top: 10px;
+    background-color: #1B3E1C;
+}
+
+.botmwrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.botmcont{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.left{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 500px;
+    height: 320px;
+}
+
+.comancontdiv{
+    display: flex;
+    align-items: center;
+    
+}
+
+.comanconticon{
+    position: relative;
+    background-color: #1B3E1C;
+    height: 40px;
+    width: 40px;
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+
+
+.comancontdiv span{
+    color: #1B3E1C;
+    font-size: 28px;
+    font-weight: 600;
+    margin-left: 25px;
+
+}
+
+.comancontdiv p{
+    color: #1B3E1C;
+    margin-left: 25px;
+    margin-top: 10px;
+    font-size: 18px;
+    width: 390px;
+}
+
+.Social{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 350px;
+}
+
+.Social span{
+    color: #1B3E1C;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.socialimgwrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+}
+
+.socialimg{
+    position: relative;
+    height: 38px;
+    width: 38px;
+    border: 2px solid #1B3E1C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.addr{
+    align-items: start;
+}
+
+.mapimg{
+    position: relative;
+    height: 320px;
+    width: 550px;
+    overflow: hidden;
+    border: 2px solid #1B3E1C;
+    border-radius: 20px;
+}
+
+.gmap{
+    border: none;
+}
+
+.mapimgm{
+    display: none;
+}
+
+@media (max-width: 860px) {
+    .mainwrapper{
+        height: fit-content;
+        padding: 100px 0;
+
+    }
+
+    .childwrapper{
+        width: 90%;
+        height: fit-content;
+    }
+
+    .botmcont{
+        flex-direction: column;
+        width: 100%;
+        margin-top: 70px;
+    }
+
+    .Title{
+        font-size: 38px;
+    }
+    .Titlewrapper{
+        margin-bottom: 20px;
+    }
+    .Titlede{
+        margin-top: 6px;
+        width: 80px;
+    }
+    .mapimg{
+        display: none;
+    }
+
+    .mapimgm{
+
+        height: 350px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #1B3E1C;
+        overflow: hidden;
+        border-radius: 12px;
+    }
+
+    
+    .comanconticon{
+        padding: 10px;
+        height: 15px;
+        width: 15px;
+    }
+
+    .comancontdiv span{
+        font-size: 22px;
+        margin-left: 21px;
+    }
+
+    .comancontdiv p{
+        margin-left: 21px;
+        margin-top: 8px;
+        font-size: 15px;
+        width: auto;
+    }
+
+    .left{
+        width: fit-content;
+        height: fit-content;
+    }
+    .addring{
+        height: auto;
+        width: 35px;
+        height: 15px;
+    }
+    
+    .Social span{
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    .socwrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Social{
+        width: 90%;
+        margin-bottom: 0 !important;
+    }
+
+    .socialimgwrapper{
+        width: fit-content;
+    }
+
+    .fb ,.twt{
+        margin-right: 15px;
+    }
+    .socialimg{
+        height: 15px;
+        width: 15px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .call, .mail, .addr{
+        margin-bottom: 22px;
+    }
+    
+    .right{
+        margin-top: 80px;
+    }
+
+}

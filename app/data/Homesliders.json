@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "Title1": "The chemistry of success.",
+        "Title2": "Hindustan Organics",
+        "img": "/Assets/Slider/slide1.jpeg",
+        "alt": "Hindustan Organics slide 1"
+    },
+    {
+        "id": 2,
+        "Title1": "Slide 2",
+        "Title2": "Hindustan Organics",
+        "img": "/Assets/Slider/slide2.jpeg",
+        "alt": "Hindustan Organics slide 2"
+    },
+    {
+        "id": 3,
+        "Title1": "Slide 3",
+        "Title2": "Hindustan Organics",
+        "img": "/Assets/Slider/slide3.jpeg",
+        "alt": "Hindustan Organics slide 3"
+    }
+]
