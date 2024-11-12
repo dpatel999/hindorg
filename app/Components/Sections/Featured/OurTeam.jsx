@@ -28,7 +28,7 @@ export default function OurTeam() {
                     </div>
                 </div>
                 
-                <div className={Styles.IMGwrp}>
+                {/* <div className={Styles.IMGwrp}>
                     <div className={Styles.imgcard}>
                         <Image
                             src="/Assets/team/2.webp"
@@ -42,7 +42,7 @@ export default function OurTeam() {
                             <p>senior manager</p>
                         </div>
                     </div>
-                </div>
+                </div> */}
                 <div className={Styles.IMGwrp}>
                     <div className={Styles.imgcard}>
                         <Image
