@@ -8,15 +8,15 @@
     },
     {
         "id": 2,
-        "Title1": "Slide 2",
-        "Title2": "Hindustan Organics",
+        "Title1": "Pioneering Excellence",
+        "Title2": "in Chemical Refining",
         "img": "/Assets/Slider/slide2.jpeg",
         "alt": "Hindustan Organics slide 2"
     },
     {
         "id": 3,
-        "Title1": "Slide 3",
-        "Title2": "Hindustan Organics",
+        "Title1": "Transforming Raw Materials into",
+        "Title2": "Endless Possibilities",
         "img": "/Assets/Slider/slide3.jpeg",
         "alt": "Hindustan Organics slide 3"
     }

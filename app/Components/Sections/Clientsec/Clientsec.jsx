@@ -7,10 +7,7 @@ export default function Clientsec() {
   return (
     <div className={Styles.clientmain}>
         <div className={Styles.childwrapper}>
-            <div className={Styles.titlewrapper}>
-                <span className={Styles.Title}>Our Clients</span>
-                <div className={Styles.Titlede}></div>
-            </div>
+            
             <div className={Styles.bottomwrapper}>
                 <div className={Styles.leftblur}></div>
                 <div className={Styles.rightblur}></div>
@@ -53,8 +50,8 @@ export default function Clientsec() {
                         <Image
                             src="/Assets/Clients/client4.png"
                             alt="Customer Count"
-                            width={800}
-                            height={461}
+                            width={259}
+                            height={194}
                             objectFit='cover'
                         />
                     </div>
@@ -110,8 +107,8 @@ export default function Clientsec() {
                         <Image
                             src="/Assets/Clients/client4.png"
                             alt="Customer Count"
-                            width={800}
-                            height={461}
+                            width={259}
+                            height={194}
                             objectFit='contain'
                         />
                     </div>
@@ -160,8 +157,8 @@ export default function Clientsec() {
                         <Image
                             src="/Assets/Clients/client4.png"
                             alt="Customer Count"
-                            width={800}
-                            height={461}
+                            width={259}
+                            height={194}
                             objectFit='contain'
                         />
                     </div>
@@ -209,8 +206,8 @@ export default function Clientsec() {
                         <Image
                             src="/Assets/Clients/client4.png"
                             alt="Customer Count"
-                            width={800}
-                            height={461}
+                            width={259}
+                            height={194}
                             objectFit='contain'
                         />
                     </div>

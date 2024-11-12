@@ -1,7 +1,6 @@
 .headwrapper{
     display: flex;
     justify-content: center;
-    padding: 15px 0 0 0;
     backdrop-filter: blur(10px);
     position: sticky;
     top: 0px;
@@ -12,9 +11,9 @@
     display: flex;
     justify-content: center;
     height: 70px;
-    width: 91.5vw;
+    width: 100%;
     background-color: #EFFFEF;
-    border-radius: 10px;
+    border-radius: 0 0 10px 10px;
     box-shadow: 0px 5px 16px #0000001e inset;
 }
 
@@ -97,19 +96,66 @@
     display: none;
 }
 
+.whatsapp{
+    display: flex;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    height: 70px;
+    width: 70px;
+    background-color: #25D366;
+    z-index: 10000000;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.whatsappmob{
+    display: none;
+}
+
+.whatsapp svg path{
+    fill: #EFFFEF;
+}
+
+
 @media (max-width: 860px) {
+    
+    .whatsapp{
+        display: none;
+    }
+    .whatsappmob{
+        display: flex;
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        height: 50px;
+        width: 50px;
+        background-color: #25D366;
+        z-index: 10000000;
+        border-radius: 50px;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .whatsappmob svg path{
+        fill: #EFFFEF;
+    }
+
     .headwrapper{
         backdrop-filter: none;
         padding: 0;
         position: sticky;
         top: 0px;
     }
-    .main{
 
+    .main{
         padding: 0px 30px;
         position: relative;
         z-index: 9999;
     }
+
     .maxwidth{
         border-radius: 0;
         box-shadow: 0px 5px 16px #0000001e;
@@ -118,7 +164,6 @@
 
     .navlink{
         display: none;
-   
     }
 
     .navlinkm{

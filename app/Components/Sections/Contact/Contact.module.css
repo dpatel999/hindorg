@@ -83,9 +83,9 @@
 .comanconticon{
     position: relative;
     background-color: #1B3E1C;
-    height: 40px;
-    width: 40px;
-    padding: 4px;
+    height: 20px;
+    width: 20px;
+    padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -2,32 +2,324 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 80PX;
+    height: 575px;
+
 }
+
 .chidwrapper{
-    width: 800px;
+    background-color: #efffef;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.subchidwrapper{
+    width: 1200px;
     height: fit-content;
+    display: flex;
+    align-items: center;
+    position: relative;
 }
 
-.contM{
-    display: none;
+.titlewrapper{
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: #1B3E1C;
 }
 
-@media (max-width: 860px) {
+.Title{
+    font-size: 50px;
+    font-weight: 600;
+    margin-right: 20px;
+}
+.Titlede {
+    height: 3px;
+    width: 100px;
+    margin-top: 10px;
+    background-color: #1B3E1C;
+}
+
+.titleing{
+    height: 225px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.formmain{
+    position: absolute;
+    right: 0;
+    height: fit-content;
+    border-radius: 18px;
+    background-color: white;
+    padding: 20px 55px;
+    box-shadow: 0px 3px 40px #0000001f;
+}
+
+
+.InpFrame{
+    position: relative;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 18px;
+}
+
+
+.inpbox{
+    padding:  0 15px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border: 2px solid #1B3E1C;
+    border-radius: 8px;
+    background: none;
+    outline: none;
+    font-size: 18px;
+    height: 25px;
+    width: 300px;
+    color: #1B3E1C;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    transition: all .2s cubic-bezier(0.4,0,0.2,1),opacity 150ms cubic-bezier(0.4,0,0.2,1);
+    resize: none;
+}
+
+.INPplace{
+    position: absolute;
+    top: 13px;
+    left: 10px;
+    font-weight: 400;
+    color: #1B3E1C;
+    pointer-events: none;
+    transition: all .2s cubic-bezier(0.4,0,0.2,1),opacity 150ms cubic-bezier(0.4,0,0.2,1);
+    font-size: 16px;
+    background-color: white;
+    padding: 0 5px;
+}
+
+.inpbox:focus{
+    border: 2px solid #1a73e8;
+}
+
+.inpbox:focus ~ .INPplace{
+    top: -6px;
+    left: 15px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #1a73e8;
+}
+
+.inpbox:not(:placeholder-shown) ~ .INPplace {
+    top: -6px;
+    left: 15px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.inpmsg{
+    height: 70px;
+}
+
+.inpmsg::-webkit-scrollbar{
+    width: 10px;
+    height: 95%;
+
+}
+
+
+.inpmsg::-webkit-scrollbar-thumb{
+    background-color: #1B3E1C;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    height: auto;
+    width: auto;
+    margin-right: 10px;
+}
+
+.Hormtitle{
+    margin-bottom: calc(20px + 5px);
+}
+
+.Hormtitle span{
+    font-size: 30px;
+    font-weight: 600;
+    color: #1B3E1C;
+}
+
+.Hormtitle p{
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+.submitbtn{
+    margin-top: 17px;
+    background-color: #1B3E1C;
+    color: #efffef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 200ms ease-in-out;
+    position: relative;
+}
+
+.submitbtn:hover{
+    border: 2px solid #1B3E1C;
+    background-color: #fff;
+    color: #1B3E1C;
+    font-weight: 500;
+}
+
+.inpblank{
+    border: 2px solid red;
+}
+
+.placeblank{
+    color: red;
+}
+
+.nonbtn{
+    background-color: #707070;
+    position: relative;
+    font-weight: 400;
+    pointer-events: none;
+}
+
+.loadingdiv{
+    position: absolute;
+    height: 30px;
+    width: 90px;
+    top: -22.8px;
+    right: -21px;
+    margin-left: 5px;
+    transition: all 200ms ease-in-out;
+}
+
+.loadbtn{
+    pointer-events: none;
+    background-color: rgb(65, 65, 212);
+    padding-right: 54px;
+    font-weight: 500;
+}
+
+
+.inpboxAFsubmit{
+    border-color: #1B3E1C;
+}
+
+.INPplaceAFsubmit{
+    color: #1B3E1C;
+}
+
+.btnHolder{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.donesubmit{
+    color: #1a73e8;
+    padding-top: 20px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.errsubmit{
+    color: red;
+    padding-top: 20px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.srverrsubmit{
+    color: rgb(212, 212, 0);
+    padding-top: 20px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.description p{
+    padding-top: 28px;
+    font-size: 28px;
+    color: #1B3E1C;
+    font-weight: 500;
+}
+
+@media (max-width: 860px){
 
     .mainwrapper{
-        padding: 90px 0;
-        padding-bottom: 20px;
-        background-color: #EFFFEF;
+        height: fit-content;
+        padding: 70px 0;
+        background-color: #efffef;
     }
 
-    .chidwrapper{
+    .subchidwrapper{
+        position: relative;
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .Title{
+        font-size: 38px;
+    }
+    .Titlewrapper{
+        margin-bottom: 20px;
+    }
+    .Titlede{
+        margin-top: 6px;
+        width: 80px;
+    }
+
+    .formmain{
+        position: relative;
+        padding: 40px 20px;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+    }
+
+    .titleing{
+        height: fit-content;
+        padding-bottom: 50px;
+    }
+
+    .description p{
+        font-weight: 400;
+        font-size: 25px;
+        padding-top: 20px;
+    }
+    
+    .Hormtitle{
+        margin-bottom: 22.5px;
         width: 100%;
     }
-    .contF{
-        display: none;
+
+    .inpbox{
+        width: 90%;
     }
-    .contM{
-        display: block;
+    
+    .InpFrame{
+        width: 100%;
+    }
+    .inpfldgrp{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btnHolder{
+        width: 100%;
     }
 }

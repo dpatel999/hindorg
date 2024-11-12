@@ -28,7 +28,7 @@ export default function Contact() {
                         <span>+91 9427050266</span>
                     </div>
                     </a>
-                    <a href="mailto:hindorg@gmail.com">
+                    <a href="mailto:sales@hindorg.com">
                     <div className={`${Styles.mail} ${Styles.comancontdiv}`}>
                         <div className={`${Styles.mailing} ${Styles.comanconticon}`}>
                         <Image
@@ -39,7 +39,7 @@ export default function Contact() {
                             objectFit='contain'
                         />
                         </div>
-                        <span>hindorg@gmail.com</span>
+                        <span>sales@hindorg.com</span>
                     </div>
                     </a>
                     <a href="https://goo.gl/maps/BPn3B2eEEfPuCiMCA" target='_blank'>
