@@ -15,7 +15,7 @@ export default function OurTeam() {
                     <div className={Styles.imgcard}>
                         <Image
                             className={Styles.mainImg}
-                            src="/Assets/team/1.webp"
+                            src="/Assets/team/Haresh.jpeg"
                             alt="Haresh Patel"
                             width={768}
                             height={1024}
