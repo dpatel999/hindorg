@@ -1,16 +1,20 @@
 'use client';
+import dynamic from 'next/dynamic';
+
+
 import Image from "next/legacy/image";
 import Styles from './page.module.css'
-import HomeSec from './Components/Sections/HomeSec/HomeSec';
-import About from './Components/Sections/About/About'
-import Services from './Components/Sections/Serivces/Services';
-import Whychoose from './Components/Sections/Whychoose/Whychoose';
-import Testimon from './Components/Sections/Testimon/Testimon';
-import Clientsec from './Components/Sections/Clientsec/Clientsec';
-import OurTeam from './Components/Sections/Featured/OurTeam';
-import Contact from './Components/Sections/Contact/Contact';
-import Footer from './Components/Footer/Footer';
-import Form from './Components/Sections/Form/Form';
+
+const HomeSec = dynamic(() => import('./Components/Sections/HomeSec/HomeSec'), { ssr: false });
+const About = dynamic(() => import('./Components/Sections/About/About'), { ssr: false });
+const Services = dynamic(() => import('./Components/Sections/Serivces/Services'), { ssr: false });
+const Whychoose = dynamic(() => import('./Components/Sections/Whychoose/Whychoose'), { ssr: false });
+const Testimon = dynamic(() => import('./Components/Sections/Testimon/Testimon'), { ssr: false });
+const Clientsec = dynamic(() => import('./Components/Sections/Clientsec/Clientsec'), { ssr: false });
+const OurTeam = dynamic(() => import('./Components/Sections/Featured/OurTeam'), { ssr: false });
+const Contact = dynamic(() => import('./Components/Sections/Contact/Contact'), { ssr: false });
+const Form = dynamic(() => import('./Components/Sections/Form/Form'), { ssr: false });
+const Footer = dynamic(() => import('./Components/Footer/Footer'), { ssr: false });
 import {  useState, useEffect } from 'react';
 
 
