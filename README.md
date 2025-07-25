@@ -35,4 +35,4 @@ This command will downalad the required packages from node package manager.
 
 ## Authors
 
-- [@aayush-khatrii](https://github.com/aayush-khatrii)
+- [@dpatel999]
