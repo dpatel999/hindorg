@@ -1,38 +1,28 @@
+# Hindustan Organics Marketplace
 
-# Hindustan Organics
-This Project is created with [Next.js](https://nextjs.org/).
+A modern B2B platform for buying and selling organic chemicals, fertilizers, and agro products with real-time bidding and partner support.
 
-First, run the Node module installation command
+## Features
+- 🛒 Marketplace for Buy/Sell
+- 🔨 Real-time Bidding System
+- 👥 Partner Dashboard
+- 🔍 Advanced Search & Filters
+- 💳 Buy Now + Auction
+
+## Getting Started
 
 ```bash
-# Module Installation command
-
 npm install
+npm run dev
 ```
-This command will downalad the required packages from node package manager.
 
-than run the build command to **```Out```**  folder in root directory
-the **```Out```**  folder contain the static contents that are easily uploaded to the static hosting.
+## Tech Stack
+- Next.js 13+ (App Router)
+- Tailwind CSS
+- Supabase (planned for DB + realtime)
 
-
-```bash
-# build command
-
-npm build
-```
-This command will downalad the required packages from node package manager.
-
-
-
-
-# Secret File
-
-### you don't need any secret if you are the owner besause the project is already deployed with the files
-
-
-##### Note: if you need the serect file for Contect form that send the user inquiry to email, You need to contect devloper they send it through secure communication channel
-
+## Task Tracking
+See [TASKS.md](TASKS.md) and [ROADMAP.md](ROADMAP.md)
 
 ## Authors
-
-- [@dpatel999]
+- [@dpatel999](https://github.com/dpatel999)
