@@ -60,19 +60,38 @@ export default function Form() {
     if (!validate()) return;
 
     setIsSubmitting(true);
+    setSubmitStatus(null);
 
-    // Simulate API call (replace with actual implementation)
-    setTimeout(() => {
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+
+      if (response.ok && result.success) {
+        setSubmitStatus('success');
+        // Reset form
+        setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
+        setErrors({});
+      } else {
+        setSubmitStatus('error');
+      }
+    } catch (error) {
+      console.error('Form submission error:', error);
+      setSubmitStatus('server-error');
+    } finally {
       setIsSubmitting(false);
-      setSubmitStatus('success');
 
-      // Reset form
-      setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
-      setErrors({});
-
-      // Clear success message after 4 seconds
-      setTimeout(() => setSubmitStatus(null), 4000);
-    }, 850);
+      // Auto-clear status messages after 5 seconds
+      setTimeout(() => {
+        setSubmitStatus(null);
+      }, 5000);
+    }
   };
 
   const isFormValid =

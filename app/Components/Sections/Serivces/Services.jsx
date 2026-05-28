@@ -44,8 +44,8 @@ export default function Services() {
               <span className={Styles.Title}>Our Products</span>
               <div className={Styles.Titlede}></div>
             </div>
-            <p style={{ color: 'var(--text-muted)', fontSize: '15px', maxWidth: '620px' }}>
-              A comprehensive portfolio of high-purity industrial solvents and specialty chemicals.
+            <p style={{ color: 'var(--text-muted)', fontSize: '15px', maxWidth: '640px' }}>
+              A carefully curated range of high-purity solvents and specialty chemicals, refined to meet the exacting standards of pharmaceutical, coating, adhesive, and manufacturing industries.
             </p>
 
             <div className={Styles.bottom}>

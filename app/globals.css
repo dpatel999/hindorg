@@ -1,29 +1,168 @@
 /* ============================================
-   HINDUSTAN ORGANICS — CLASSIC PROFESSIONAL
+   HINDUSTAN ORGANICS — SPACEX-INSPIRED DARK THEME
+   Sexy • Minimal • High-Tech • Premium
    ============================================ */
 
 :root {
-  /* Classic Professional Palette */
-  --navy: #0B1D36;
-  --navy-dark: #071426;
-  --gold: #B89B5E;
-  --gold-dark: #8C7340;
-  --charcoal: #1F2937;
-  --charcoal-light: #374151;
-  --cream: #F8F5F0;
-  --cream-dark: #F1EDE4;
+  /* SpaceX-inspired Dark Palette */
+  --bg: #0A0A0A;
+  --bg-elevated: #141414;
+  --bg-card: #161616;
+  --text: #F5F5F5;
+  --text-muted: #A3A3A3;
+  --accent: #00D4FF;           /* Futuristic cyan - slick & modern */
+  --accent-hover: #00B8E6;
+  --border: #2A2A2A;
+  --border-light: #333333;
   --white: #FFFFFF;
-  --light-gray: #F1F0EB;
-  --border: #D1CFC6;
-  --text-muted: #6B7280;
+  --red: #FF2D2D;
+
+  /* Subtle gold kept very sparingly as secondary */
+  --gold: #C5A25F;
 
   /* Typography */
   --font-serif: var(--font-playfair);
   --font-sans: var(--font-inter);
 
   /* Spacing */
-  --section-gap: 100px;
+  --section-gap: 120px;
   --container: 1200px;
+}
+
+/* Base */
+body {
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+.container {
+  background-color: var(--bg);
+}
+
+/* Headings - Big, bold, impactful */
+.section-title,
+h1, h2 {
+  color: var(--white);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+.section-subtitle {
+  color: var(--accent);
+  letter-spacing: 2.5px;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.section-divider {
+  background-color: var(--accent);
+  width: 64px;
+  height: 1px;
+}
+
+/* Links */
+a {
+  color: var(--accent);
+}
+
+a:hover {
+  color: var(--white);
+}
+
+/* Buttons - Sharp, minimal, SpaceX-like */
+.btn, .calltoact, .submitbtn {
+  background-color: transparent;
+  color: var(--white);
+  border: 1px solid var(--white);
+  padding: 13px 32px;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  transition: all 180ms ease;
+}
+
+.btn:hover, .calltoact:hover, .submitbtn:hover {
+  background-color: var(--white);
+  color: var(--bg);
+  border-color: var(--white);
+}
+
+.btn-gold {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.btn-gold:hover {
+  background-color: var(--accent);
+  color: var(--bg);
+  border-color: var(--accent);
+}
+
+/* Cards - Dark, clean, high-tech */
+.cardwrapper,
+.vm_card,
+.card,
+.slidercard,
+.clientimgcard {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+
+.cardwrapper:hover,
+.vm_card:hover,
+.card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 10px 30px -10px rgba(0, 212, 255, 0.1);
+}
+
+/* Form Inputs - Dark theme */
+input, textarea, select {
+  background-color: var(--bg-elevated);
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+
+input:focus, textarea:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(0, 212, 255, 0.1);
+}
+
+/* Modals */
+.fullback {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.content, .modal-content {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+
+/* FAQ */
+.faqitem {
+  border-bottom-color: var(--border);
+}
+
+.faqq {
+  color: var(--white);
+}
+
+.faqa {
+  color: var(--text-muted);
+}
+
+/* Footer */
+.mainwrapper {
+  background-color: #000000;
+}
+
+.navlinks ul li {
+  color: var(--text);
+}
+
+.navlinks ul li:hover {
+  color: var(--accent);
 }
 
 input::-webkit-outer-spin-button,
