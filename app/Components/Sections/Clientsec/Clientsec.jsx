@@ -1,232 +1,44 @@
 'use client';
-import Styles from './Clientsec.module.css'
-import Image from 'next/legacy/image'
+import Image from 'next/legacy/image';
+import Styles from './Clientsec.module.css';
 
+const clients = [
+  '/Assets/Clients/client1.png',
+  '/Assets/Clients/client2.png',
+  '/Assets/Clients/client3.png',
+  '/Assets/Clients/client4.png',
+  '/Assets/Clients/client5.png',
+];
 
 export default function Clientsec() {
   return (
     <div className={Styles.clientmain}>
-        <div className={Styles.childwrapper}>
-            
-            <div className={Styles.bottomwrapper}>
-                <div className={Styles.leftblur}></div>
-                <div className={Styles.rightblur}></div>
-                <div className={Styles.clientimgwrapperm}>
-                    <div className={Styles.whitebgm}>
-                    <div className={Styles.clientimgcardm}>
-                        <Image
-                            src="/Assets/Clients/client1.png"
-                            alt="Customer Count"
-                            width={1348}
-                            height={416}
-                            objectFit='cover'
-                        />
-                    </div>
-                    </div>
-                    <div className={Styles.whitebgm}>
-                    <div className={Styles.clientimgcardm}>
-                        <Image
-                            src="/Assets/Clients/client2.png"
-                            alt="Customer Count"
-                            width={300}
-                            height={112}
-                            objectFit='cover'
-                        />
-                    </div>
-                    </div>
-                    <div className={Styles.whitebgm}>
-                    <div className={Styles.clientimgcardm}>
-                        <Image
-                            src="/Assets/Clients/client3.png"
-                            alt="Customer Count"
-                            width={1381}
-                            height={502}
-                            objectFit='cover'
-                        />
-                    </div>
-                    </div>
-                    <div className={Styles.whitebgm}>
-                    <div className={Styles.clientimgcardm}>
-                        <Image
-                            src="/Assets/Clients/client4.png"
-                            alt="Customer Count"
-                            width={259}
-                            height={194}
-                            objectFit='cover'
-                        />
-                    </div>
-                    </div>
-                    <div className={Styles.whitebgm}>
-                    <div className={Styles.clientimgcardm}>
-                        <Image
-                            src="/Assets/Clients/client5.png"
-                            alt="Customer Count"
-                            width={184}
-                            height={53}
-                            objectFit='cover'
-                        />
-                    </div>
-                    </div>
-                </div>
-
-
-
-                <div className={Styles.clientimgwrapper}>
-
-                    <div className={Styles.clientimgcard}>
-                        <Image
-                            src="/Assets/Clients/client1.png"
-                            alt="Customer Count"
-                            width={1348}
-                            height={416}
-                            objectFit='contain'
-                        />
-                    </div>
-
-                    <div className={Styles.clientimgcard}>
-                        <Image
-                            src="/Assets/Clients/client2.png"
-                            alt="Customer Count"
-                            width={300}
-                            height={112}
-                            objectFit='contain'
-                        />
-                    </div>
-
-                    <div className={Styles.clientimgcard}>
-                        <Image
-                            src="/Assets/Clients/client3.png"
-                            alt="Customer Count"
-                            width={1381}
-                            height={502}
-                            objectFit='contain'
-                        />
-                    </div>
-
-                    <div className={Styles.clientimgcard}>
-                        <Image
-                            src="/Assets/Clients/client4.png"
-                            alt="Customer Count"
-                            width={259}
-                            height={194}
-                            objectFit='contain'
-                        />
-                    </div>
-
-                    <div className={Styles.clientimgcard}>
-                        <Image
-                            src="/Assets/Clients/client5.png"
-                            alt="Customer Count"
-                            width={184}
-                            height={53}
-                            objectFit='contain'
-                        />
-                    </div>
-
-                    <div className={Styles.clientimgcard}>
-                        <Image
-                            src="/Assets/Clients/client1.png"
-                            alt="Customer Count"
-                            width={1348}
-                            height={416}
-                            objectFit='contain'
-                        />
-                    </div>
-
-                    <div className={Styles.clientimgcard}>
-                        <Image
-                            src="/Assets/Clients/client2.png"
-                            alt="Customer Count"
-                            width={300}
-                            height={112}
-                            objectFit='contain'
-                        />
-                    </div>
-
-                    <div className={Styles.clientimgcard}>
-                        <Image
-                            src="/Assets/Clients/client3.png"
-                            alt="Customer Count"
-                            width={1381}
-                            height={502}
-                            objectFit='contain'
-                        />
-                    </div>
-
-                    <div className={Styles.clientimgcard}>
-                        <Image
-                            src="/Assets/Clients/client4.png"
-                            alt="Customer Count"
-                            width={259}
-                            height={194}
-                            objectFit='contain'
-                        />
-                    </div>
-
-                    <div className={Styles.clientimgcard}>
-                        <Image
-                            src="/Assets/Clients/client5.png"
-                            alt="Customer Count"
-                            width={184}
-                            height={53}
-                            objectFit='contain'
-                        />
-                    </div>
-                    <div className={Styles.clientimgcard}>
-                        <Image
-                            src="/Assets/Clients/client1.png"
-                            alt="Customer Count"
-                            width={1348}
-                            height={416}
-                            objectFit='contain'
-                        />
-                    </div>
-
-                    <div className={Styles.clientimgcard}>
-                        <Image
-                            src="/Assets/Clients/client2.png"
-                            alt="Customer Count"
-                            width={300}
-                            height={112}
-                            objectFit='contain'
-                        />
-                    </div>
-
-                    <div className={Styles.clientimgcard}>
-                        <Image
-                            src="/Assets/Clients/client3.png"
-                            alt="Customer Count"
-                            width={1381}
-                            height={502}
-                            objectFit='contain'
-                        />
-                    </div>
-
-                    <div className={Styles.clientimgcard}>
-                        <Image
-                            src="/Assets/Clients/client4.png"
-                            alt="Customer Count"
-                            width={259}
-                            height={194}
-                            objectFit='contain'
-                        />
-                    </div>
-
-                    <div className={Styles.clientimgcard}>
-                        <Image
-                            src="/Assets/Clients/client5.png"
-                            alt="Customer Count"
-                            width={184}
-                            height={53}
-                            objectFit='contain'
-                        />
-                    </div>
-
-                   
-                </div>
-
-            </div>
+      <div className={Styles.childwrapper}>
+        <div style={{ textAlign: 'center', marginBottom: '42px' }}>
+          <span className="section-subtitle">Our Partners</span>
+          <h2 className="section-title" style={{ fontSize: '34px' }}>Trusted by Leading Manufacturers</h2>
         </div>
+
+        {/* Desktop Marquee */}
+        <div style={{ overflow: 'hidden' }}>
+          <div className={Styles.clientimgwrapper}>
+            {[...clients, ...clients].map((src, index) => (
+              <div key={index} className={Styles.clientimgcard}>
+                <Image src={src} alt="Hindustan Organics client" width={128} height={48} objectFit="contain" />
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Mobile Grid */}
+        <div className={Styles.clientimgwrapperm}>
+          {clients.map((src, index) => (
+            <div key={index} className={Styles.whitebgm}>
+              <Image src={src} alt="Hindustan Organics client" width={118} height={44} objectFit="contain" />
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
-  )
+  );
 }

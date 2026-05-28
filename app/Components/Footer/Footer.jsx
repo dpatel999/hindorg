@@ -1,78 +1,63 @@
 'use client';
-import Styles from './Footer.module.css';
 import Image from 'next/legacy/image';
+import Styles from './Footer.module.css';
 
 export default function Footer() {
+  const year = new Date().getFullYear();
+
   return (
-    <div className={Styles.mainwrapper}>
-        <div className={Styles.childwqrapper}>
-            <div className={Styles.contchildwrapper}>
-                <div className={Styles.top}>
-                    <div className={Styles.brandsvg}>
-                        <a href="/">
-                        <Image
-                            src="/Assets/footer_brand.png"
-                            alt="Customer Count"
-                            width={264}
-                            height={67}
-                            objectFit='contain'
-                        />
-                        </a>
-                    </div>
-                    <div className={Styles.brandsvgm}>
-                        <Image
-                            src="/Assets/foot_mbrand.png"
-                            alt="Customer Count"
-                            width={205}
-                            height={52}
-                            objectFit='contain'
-                        />
-                    </div>
-                    <div className={Styles.navlinks}>
-                        <ul>
-                            <a href="#home"><li>Home</li></a>
-                            <a href="#about"><li>About</li></a>
-                            <a href="#services"><li>Products</li></a>
-                            <a href="#testimon"><li>Testimonial</li></a>
-                            <a href="#contact"><li>Contact us</li></a>
-                        </ul>
-                    </div>
-                </div>
-                <div className={Styles.centerde}></div>
-                <div className={Styles.botttom}>
-                    <span>© 2023 Hindustan Organics | Designed by Weblom </span>
-                    <div className={Styles.socialwrapper}>
-                    <div className={Styles.socialimg}>
-                                <Image
-                                    src="/Assets/fb.png"
-                                    alt="Customer Count"
-                                    width={11}
-                                    height={20}
-                                    objectFit='contain'
-                                />
-                            </div>
-                            <div className={Styles.socialimg}>
-                                <Image
-                                    src="/Assets/twt.png"
-                                    alt="Customer Count"
-                                    width={19}
-                                    height={16}
-                                    objectFit='contain'
-                                />
-                            </div>
-                            <div className={Styles.socialimg}>
-                                <Image
-                                    src="/Assets/insta.png"
-                                    alt="Customer Count"
-                                    width={19}
-                                    height={19}
-                                    objectFit='contain'
-                                />
-                            </div>
-                    </div>
-                </div>
+    <footer className={Styles.mainwrapper}>
+      <div className={Styles.childwqrapper}>
+        <div className={Styles.contchildwrapper}>
+          {/* Brand */}
+          <div>
+            <div className={Styles.brandsvg}>
+              <Image
+                src="/Assets/footer_brand.png"
+                alt="Hindustan Organics logo"
+                width={188}
+                height={48}
+                objectFit="contain"
+              />
             </div>
+            <div className={Styles.brandsvgm}>
+              <Image
+                src="/Assets/foot_mbrand.png"
+                alt="Hindustan Organics logo"
+                width={148}
+                height={38}
+                objectFit="contain"
+              />
+            </div>
+          </div>
+
+          {/* Nav */}
+          <nav className={Styles.navlinks}>
+            <ul>
+              <li onClick={() => document.getElementById('home')?.scrollIntoView({ behavior: 'smooth' })}>Home</li>
+              <li onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}>About</li>
+              <li onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}>Products</li>
+              <li onClick={() => document.getElementById('testimon')?.scrollIntoView({ behavior: 'smooth' })}>Testimonials</li>
+              <li onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>Contact</li>
+            </ul>
+          </nav>
         </div>
-    </div>
-  )
+
+        <div className={Styles.centerde} />
+
+        <div className={Styles.botttom}>
+          <span>© {year} Hindustan Organics. All rights reserved.</span>
+
+          <div className={Styles.socialwrapper}>
+            <div className={Styles.socialimg}>
+              <Image src="/Assets/fb.png" alt="Facebook" width={9} height={16} />
+            </div>
+            <div className={Styles.socialimg}>
+              <Image src="/Assets/insta.png" alt="Instagram" width={15} height={15} />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
 }

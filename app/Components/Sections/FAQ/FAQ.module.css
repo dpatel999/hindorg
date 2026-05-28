@@ -1,0 +1,62 @@
+/* ============================================
+   CLASSIC PROFESSIONAL FAQ (for GEO + SEO)
+   ============================================ */
+
+.faqwrapper {
+  padding: 90px 20px;
+  background-color: var(--white);
+}
+
+.faqchild {
+  max-width: var(--container);
+  margin: 0 auto;
+}
+
+.faqgrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px 32px;
+  margin-top: 36px;
+}
+
+.faqitem {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 18px;
+}
+
+.faqitem:last-child {
+  border-bottom: none;
+}
+
+.faqq {
+  font-family: var(--font-serif);
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 8px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faqq:hover {
+  color: var(--gold);
+}
+
+.faqa {
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--charcoal-light);
+}
+
+@media (max-width: 860px) {
+  .faqgrid {
+    grid-template-columns: 1fr;
+    gap: 14px 0;
+  }
+
+  .faqq {
+    font-size: 16px;
+  }
+}

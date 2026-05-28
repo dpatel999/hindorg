@@ -1,170 +1,78 @@
-.mainwrapper{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 600px;
+/* ============================================
+   CLASSIC PROFESSIONAL OUR TEAM
+   ============================================ */
+
+.mainwrapper {
+  padding: 90px 20px;
+  background-color: var(--white);
 }
 
-.childwrapper{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    width: 1250px;
-    height: 450px;
+.childwrapper {
+  max-width: var(--container);
+  margin: 0 auto;
 }
 
-
-.titlewrapper{
-    display: flex;
-    align-items: center;
-    position: relative;
-    color: #1B3E1C;
-    
+.titlewrapper {
+  text-align: center;
+  margin-bottom: 52px;
 }
 
-.Title{
-    font-size: 50px;
-    font-weight: 600;
-    margin-right: 20px;
-}
-.Titlede {
-    height: 3px;
-    width: 100px;
-    margin-top: 10px;
-    background-color: #1B3E1C;
+.IMGsbottomWrap {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
 }
 
-.IMGsbottomWrap{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.imgcard {
+  position: relative;
+  overflow: hidden;
+  border-radius: 3px;
+  border: 1px solid var(--border);
 }
 
-.imgcard{
-    width: 225px;
-    height: 300px;
-    overflow: hidden;
-    border-radius: 15px;
-    position: relative;
-    transition: all .4s ease-in-out;
+.mainImg {
+  transition: transform 600ms ease;
 }
 
-.contentTeam{
-    position: absolute;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    height: 70px;
-    background-color: #1B3E1C;
-    transition: all .4s ease-in-out;
+.imgcard:hover .mainImg {
+  transform: scale(1.06);
 }
 
-.contentTeam span{
-    color: #efffef;
-    font-size: 21.7px;
-    font-weight: 400;
-    letter-spacing: 0.7px;
-    padding-bottom: 5px;
-    transition: all .4s ease-in-out;
+.contentTeam {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(11,29,54,0.92), rgba(11,29,54,0.65));
+  padding: 20px 18px;
+  color: var(--white);
 }
 
-.contentTeam p{
-    color: #efffef;
-    font-size: 14px;
-    font-weight: 100;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: all .4s ease-in-out;
+.contentTeam span {
+  font-size: 17px;
+  font-weight: 600;
+  display: block;
 }
 
-.imgcard:hover{
-    box-shadow: 0px 3px 40px #00000088;;
+.contentTeam p {
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  opacity: 0.85;
+  margin-top: 2px;
 }
 
-.imgcard:hover .contentTeam{
-    height: 100%;
-    padding: 0;
-    background-color: #1b3e1ca9;
-}
+@media (max-width: 860px) {
+  .mainwrapper {
+    padding: 60px 20px;
+  }
 
-.imgcard:hover .contentTeam span{
-    font-size: 22px;
-    font-weight: 500;
-}
+  .IMGsbottomWrap {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
 
-.imgcard:hover .contentTeam p{
-    font-size: 14px;
-    font-weight: 300;
-}
-
-@media (max-width: 860px){
-    .mainwrapper{
-        height: fit-content;
-    }
-
-    .childwrapper{
-        height: fit-content;
-        width: 90%;
-        padding: 85px 0 0 0;
-    }
-
-    .Title{
-        font-size: 38px;
-    }
-    .Titlewrapper{
-        margin-bottom: 20px;
-    }
-    .Titlede{
-        margin-top: 6px;
-        width: 80px;
-    }
-
-    .IMGsbottomWrap{
-        flex-direction: column;
-        margin-top: 30px;
-        display: grid;
-        grid-template-columns: 180px auto;
-        grid-template-rows: 280px auto;
-
-    }
-
-    .imgcard{
-        margin-top: 20px;
-        width: 165px;
-        height: 222px;
-    }
-
-    /* .contentTeam{
-        height: 20px;
-    } */
-
-    .contentTeam span{
-        font-size: 17px;
-        font-weight: 500;
-        padding-bottom: 3px;
-    }
-    
-    .contentTeam p{
-        font-size: 12px;
-        font-weight: 300;
-    }
-
-    .contentTeam{
-        height: 55px;
-    }
-
-    .imgcard:hover .contentTeam span{
-        font-size: 19px;
-        font-weight: 700;
-    }
-
-    .imgcard:hover .contentTeam p{
-        font-size: 13px;
-        font-weight: 300;
-    }
-    
-    
+  .contentTeam span {
+    font-size: 15px;
+  }
 }
