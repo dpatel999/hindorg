@@ -214,7 +214,11 @@
   display: none;
 }
 
-/* Floating call + WhatsApp stack */
+.mainContent {
+  /* space for mobile sticky bar is applied under 860px */
+}
+
+/* Floating call + WhatsApp stack (desktop only) */
 .floatStack {
   position: fixed;
   bottom: 24px;
@@ -224,6 +228,11 @@
   flex-direction: column;
   align-items: flex-end;
   gap: 12px;
+}
+
+/* Mobile sticky action bar — hidden on desktop */
+.mobileActionBar {
+  display: none;
 }
 
 .floatCall {
@@ -554,32 +563,66 @@
     min-height: 48px !important;
   }
 
+  /* Hide floating pills on mobile — use sticky bar instead */
   .floatStack {
-    bottom: max(14px, env(safe-area-inset-bottom));
-    right: max(12px, env(safe-area-inset-right));
-    gap: 10px;
+    display: none;
   }
 
-  .floatCall {
-    padding: 8px 12px 8px 8px;
+  .mobileActionBar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+    background: #071428;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 -8px 28px rgba(7, 20, 40, 0.35);
+    padding: 0;
+    padding-bottom: env(safe-area-inset-bottom, 0);
   }
 
-  .floatCallIcon {
-    width: 36px;
-    height: 36px;
+  .mobileActionBar a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    min-height: 58px;
+    padding: 10px 6px;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background 160ms ease, opacity 160ms ease;
+    border-right: 1px solid rgba(255, 255, 255, 0.08);
   }
 
-  .floatCallLabel span {
-    font-size: 10px;
+  .mobileActionBar a:last-child {
+    border-right: none;
   }
 
-  .floatCallLabel strong {
-    font-size: 12.5px;
+  .mobileActionBar a:active {
+    opacity: 0.85;
   }
 
-  .whatsapp {
-    width: 50px;
-    height: 50px;
+  .mabCall {
+    background: linear-gradient(180deg, #0d9488 0%, #0f766e 100%);
+  }
+
+  .mabWa {
+    background: linear-gradient(180deg, #25d366 0%, #1da851 100%);
+  }
+
+  .mabDir {
+    background: linear-gradient(180deg, #1a73e8 0%, #0d47a1 100%);
+  }
+
+  .mainContent {
+    padding-bottom: calc(62px + env(safe-area-inset-bottom, 0px));
   }
 }
 

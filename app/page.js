@@ -208,7 +208,7 @@ export default function Home() {
         </nav>
       </header>
 
-      {/* Floating Call + WhatsApp */}
+      {/* Desktop floating Call + WhatsApp */}
       <div className={Styles.floatStack}>
         <a
           href="tel:+919427050266"
@@ -241,7 +241,40 @@ export default function Home() {
         </a>
       </div>
 
-      <main>
+      {/* Mobile sticky action bar: Call | WhatsApp | Directions */}
+      <nav className={Styles.mobileActionBar} aria-label="Quick contact actions">
+        <a href="tel:+919427050266" className={Styles.mabCall}>
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+            <path d="M6.62 10.79a15.15 15.15 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.4 21 3 13.6 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.02l-2.2 2.2z" />
+          </svg>
+          <span>Call</span>
+        </a>
+        <a
+          href="https://wa.me/919427050266?text=Hello%20Haresh%20Patel%2C%20I%20would%20like%20to%20inquire%20about%20Hindustan%20Organics%20products."
+          target="_blank"
+          rel="noopener noreferrer"
+          className={Styles.mabWa}
+        >
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.198-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.372-.025-.521-.075-.149-.67-1.611-.916-2.206-.242-.592-.487-.51-.67-.51-.173 0-.372.025-.57.298-.198.298-.767.942-.767 2.293 0 1.35.787 2.66 1.04 2.86.254.2 1.78 2.71 4.3 3.79.603.26 1.073.416 1.44.532.605.192 1.157.165 1.592.1.486-.073 1.49-.61 1.7-1.2.21-.59.21-1.096.148-1.2-.062-.105-.23-.168-.48-.297z" />
+            <path d="M12.001 2.002c-5.522 0-9.999 4.477-9.999 9.999 0 1.762.46 3.47 1.334 4.96L2 22l5.102-1.312c1.45.79 3.08 1.21 4.9 1.21 5.522 0 9.999-4.477 9.999-9.999s-4.477-9.998-9.999-9.998zm0 18.267c-1.61 0-3.18-.42-4.55-1.22l-.33-.19-3.03.78.79-2.96-.21-.32c-.86-1.41-1.32-3.03-1.32-4.71 0-4.58 3.73-8.31 8.32-8.31 4.58 0 8.31 3.73 8.31 8.31-.01 4.59-3.74 8.32-8.32 8.32z" />
+          </svg>
+          <span>WhatsApp</span>
+        </a>
+        <a
+          href="https://www.google.com/maps/dir/?api=1&destination=23.099333,72.677923&travelmode=driving"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={Styles.mabDir}
+        >
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z" />
+          </svg>
+          <span>Directions</span>
+        </a>
+      </nav>
+
+      <main className={Styles.mainContent}>
         <section id="home" aria-label="Hero">
           <HomeSec onNavigate={scrollToSection} />
         </section>

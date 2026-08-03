@@ -23,7 +23,7 @@ export default function BackToTop() {
       className="back-to-top-btn"
       style={{
         position: 'fixed',
-        bottom: 'max(16px, env(safe-area-inset-bottom, 16px))',
+        bottom: 'max(72px, calc(env(safe-area-inset-bottom, 0px) + 72px))',
         left: 'max(14px, env(safe-area-inset-left, 14px))',
         zIndex: 99998,
         width: '44px',

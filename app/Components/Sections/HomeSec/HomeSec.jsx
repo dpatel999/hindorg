@@ -7,6 +7,14 @@ import { Autoplay, EffectFade, Pagination } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
+const trustItems = [
+  { value: 'Since 1995', label: 'Established' },
+  { value: 'Naroda GIDC', label: 'Ahmedabad HQ' },
+  { value: 'GC Tested', label: 'In-house QC' },
+  { value: '500+ Clients', label: 'Across India' },
+  { value: 'Ready Stock', label: 'Drums & tankers' },
+];
+
 export default function HomeSec({ onNavigate }) {
   return (
     <div className={Styles.homewrapper}>
@@ -97,6 +105,18 @@ export default function HomeSec({ onNavigate }) {
             </SwiperSlide>
           ))}
         </Swiper>
+      </div>
+
+      {/* Trust strip under hero */}
+      <div className={Styles.trustStrip} aria-label="Why industrial buyers trust us">
+        <div className={Styles.trustStripInner}>
+          {trustItems.map((item) => (
+            <div key={item.value} className={Styles.trustItem}>
+              <strong>{item.value}</strong>
+              <span>{item.label}</span>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
