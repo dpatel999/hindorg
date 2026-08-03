@@ -7,7 +7,7 @@ import { Autoplay, EffectFade, Pagination } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-export default function HomeSec() {
+export default function HomeSec({ onNavigate }) {
   return (
     <div className={Styles.homewrapper}>
       <div className={Styles.herosec}>
@@ -15,7 +15,7 @@ export default function HomeSec() {
           spaceBetween={0}
           slidesPerView={1}
           autoplay={{
-            delay: 4200,
+            delay: 4800,
             disableOnInteraction: false,
           }}
           pagination={{
@@ -33,15 +33,65 @@ export default function HomeSec() {
               <div className={Styles.slidinner}>
                 <Image
                   src={item.img}
-                  alt={item.Title1 + ' - ' + item.Title2 + ' | Hindustan Organics'}
+                  alt={item.alt || `${item.Title1} ${item.Title2}`}
                   layout="fill"
                   objectFit="cover"
                   className={Styles.imgmain}
                   priority={item.id === 1}
                 />
                 <div className={Styles.taxtimg}>
-                  <span className={Styles.taxt1}>{item.Title1}</span>
-                  <span className={Styles.taxt2}>{item.Title2}</span>
+                  <span className={Styles.eyebrow}>
+                    Industrial Chemicals · Ahmedabad · Since 1995
+                  </span>
+                  <h1 className={Styles.taxt1}>{item.Title1}</h1>
+                  <p className={Styles.taxt2}>{item.Title2}</p>
+                  <div className={Styles.ctaRow}>
+                    <a
+                      href="tel:+919427050266"
+                      className={Styles.heroCall}
+                      aria-label="Call Haresh Patel at +91-9427050266"
+                    >
+                      <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+                        <path d="M6.62 10.79a15.15 15.15 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.4 21 3 13.6 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.02l-2.2 2.2z" />
+                      </svg>
+                      <span className={Styles.heroCallText}>
+                        <span>Call Haresh Patel</span>
+                        <strong>+91-9427050266</strong>
+                      </span>
+                    </a>
+                    <button
+                      type="button"
+                      className="btn btn-gold"
+                      onClick={() => onNavigate?.('inquiry')}
+                    >
+                      Request a Quote
+                    </button>
+                    <button
+                      type="button"
+                      className="btn btn-outline"
+                      onClick={() => onNavigate?.('services')}
+                    >
+                      View Products
+                    </button>
+                  </div>
+                  <ul className={Styles.trustRow} aria-label="Key facts">
+                    <li>
+                      <strong>30+</strong>
+                      <span>Years</span>
+                    </li>
+                    <li>
+                      <strong>500+</strong>
+                      <span>Customers</span>
+                    </li>
+                    <li>
+                      <strong>40+</strong>
+                      <span>Products</span>
+                    </li>
+                    <li>
+                      <strong>Pan-India</strong>
+                      <span>Supply</span>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </SwiperSlide>

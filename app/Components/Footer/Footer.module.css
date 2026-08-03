@@ -1,10 +1,6 @@
-/* ============================================
-   CLASSIC PROFESSIONAL FOOTER
-   ============================================ */
-
 .mainwrapper {
-  background-color: var(--navy);
-  padding: 42px 20px 28px;
+  background-color: var(--navy-dark);
+  padding: 56px 20px 28px;
 }
 
 .childwqrapper {
@@ -12,34 +8,122 @@
   margin: 0 auto;
 }
 
-.contchildwrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  gap: 40px;
+.topGrid {
+  display: grid;
+  grid-template-columns: 1.4fr 0.8fr 1fr 1.1fr;
+  gap: 36px;
 }
 
-.navlinks ul {
-  display: flex;
-  gap: 32px;
+.brandText {
+  margin-top: 16px;
+  font-size: 14px;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 300px;
 }
 
-.navlinks ul li {
+.contactMini {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 16px;
+}
+
+.contactMini a {
+  color: var(--gold-light);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.contactMini a:hover {
   color: var(--white);
-  font-size: 13px;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-  transition: color 200ms ease;
 }
 
-.navlinks ul li:hover {
-  color: var(--gold);
+.footerCall {
+  display: inline-flex !important;
+  align-items: center;
+  background: linear-gradient(135deg, #0d9488 0%, #0f766e 100%);
+  color: #fff !important;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-weight: 700 !important;
+  font-size: 13.5px !important;
+  margin-bottom: 4px;
+  box-shadow: 0 4px 12px rgba(13, 148, 136, 0.25);
+  width: fit-content;
+  max-width: 100%;
+}
+
+.footerCall:hover {
+  color: #fff !important;
+  filter: brightness(1.08);
+}
+
+.colTitle {
+  font-family: var(--font-serif);
+  font-size: 16px;
+  color: var(--white);
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.navlinks ul,
+.productLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.navlinks ul li,
+.productLinks li {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 13.5px;
+  cursor: pointer;
+  transition: color 180ms ease;
+}
+
+.navlinks ul li:hover,
+.productLinks li:hover,
+.navlinks ul li a:hover {
+  color: var(--gold-light);
+}
+
+.navlinks ul li a {
+  color: inherit;
+}
+
+.address {
+  font-style: normal;
+  font-size: 13.5px;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.mapLink {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 14px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff !important;
+  background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+  padding: 11px 14px;
+  border-radius: 6px;
+  box-shadow: 0 4px 14px rgba(26, 115, 232, 0.35);
+  transition: transform 160ms ease, filter 160ms ease;
+  max-width: 100%;
+}
+
+.mapLink:hover {
+  color: #fff !important;
+  transform: translateY(-1px);
+  filter: brightness(1.08);
 }
 
 .centerde {
   height: 1px;
-  background-color: rgba(255,255,255,0.15);
-  margin: 28px 0 22px;
+  background-color: rgba(255, 255, 255, 0.12);
+  margin: 32px 0 20px;
 }
 
 .botttom {
@@ -47,36 +131,44 @@
   justify-content: space-between;
   align-items: center;
   font-size: 13px;
-  color: rgba(255,255,255,0.7);
+  color: rgba(255, 255, 255, 0.55);
 }
 
 .socialwrapper {
   display: flex;
-  gap: 14px;
+  gap: 10px;
 }
 
 .socialimg {
-  width: 28px;
-  height: 28px;
-  border: 1px solid rgba(255,255,255,0.25);
+  width: 32px;
+  height: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: border-color 180ms ease, background 180ms ease;
+}
+
+.socialimg:hover {
+  border-color: var(--gold);
+  background: rgba(184, 145, 42, 0.15);
 }
 
 .brandsvgm {
   display: none;
 }
 
-@media (max-width: 860px) {
-  .contchildwrapper {
-    flex-direction: column;
-    align-items: flex-start;
+@media (max-width: 960px) {
+  .topGrid {
+    grid-template-columns: 1fr 1fr;
+    gap: 28px 20px;
   }
+}
 
-  .navlinks ul {
-    flex-direction: column;
-    gap: 10px;
+@media (max-width: 560px) {
+  .topGrid {
+    grid-template-columns: 1fr;
+    gap: 28px;
   }
 
   .botttom {
@@ -91,6 +183,21 @@
 
   .brandsvgm {
     display: block;
-    margin-bottom: 12px;
+  }
+
+  .mainwrapper {
+    padding: 40px 16px max(28px, env(safe-area-inset-bottom));
+  }
+
+  .brandText {
+    max-width: 100%;
+    font-size: 13.5px;
+  }
+
+  .navlinks ul li,
+  .productLinks li {
+    min-height: 36px;
+    display: flex;
+    align-items: center;
   }
 }

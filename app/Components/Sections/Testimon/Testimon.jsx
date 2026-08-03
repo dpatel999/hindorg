@@ -8,19 +8,25 @@ import Styles from './Testimon.module.css';
 
 const testimonials = [
   {
-    quote: "Hindustan Organics has been our most reliable chemical supplier for over six years. Their consistency in quality and on-time deliveries have been instrumental in our production reliability.",
-    name: "Procurement Head",
-    company: "Zydus Lifesciences",
+    quote:
+      'Hindustan Organics has been our most reliable solvent supplier for years. Batch consistency and on-time deliveries have directly improved our production reliability.',
+    name: 'Procurement Head',
+    company: 'Pharmaceutical Manufacturer, Gujarat',
+    industry: 'Pharma',
   },
   {
-    quote: "Their technical team understands our exact solvent requirements. We have never had a quality rejection in the last three years — a level of reliability that is rare in this industry.",
-    name: "Plant Manager",
-    company: "Gujarat Fluorochemicals",
+    quote:
+      'Their technical team understands exact moisture and purity requirements. We have seen far fewer quality surprises compared with previous suppliers.',
+    name: 'Plant Manager',
+    company: 'Specialty Chemicals Unit, West India',
+    industry: 'Specialty Chem',
   },
   {
-    quote: "Professional, responsive, and transparent. Hindustan Organics stands out not just for product quality but for the way they conduct business. They have become a true long-term partner.",
-    name: "Director – Operations",
-    company: "Atul Ltd.",
+    quote:
+      'Professional, responsive, and transparent. Hindustan Organics stands out not only for product quality but for how they conduct commercial follow-through.',
+    name: 'Director – Operations',
+    company: 'Coatings & Adhesives Company',
+    industry: 'Coatings',
   },
 ];
 
@@ -31,22 +37,36 @@ export default function Testimon() {
     <div className={Styles.testimonwrapper}>
       <div className={Styles.tstchild}>
         <div className={Styles.titlewrapper}>
-          <span className="section-subtitle">Client Voices</span>
+          <span className="section-subtitle">Social Proof</span>
           <h2 className="section-title">What Our Clients Say</h2>
         </div>
 
         <div className={Styles.testcont}>
           <div className={Styles.left}>
             <div className={Styles.leftcont}>
-              <span>Trusted by industry leaders for consistent quality and service.</span>
+              <span>Trusted by manufacturers who cannot afford inconsistent chemistry.</span>
             </div>
+            <p className={Styles.leftSub}>
+              From pharma plants to coatings lines — buyers return for specification discipline and
+              dependable people.
+            </p>
             <div className={Styles.leftslidtap}>
-              <div onClick={() => swiperRef.current?.swiper.slidePrev()} className={Styles.lefttic}>
-                <Image src="/Assets/lefts.png" alt="Previous" width={18} height={12} />
-              </div>
-              <div onClick={() => swiperRef.current?.swiper.slideNext()} className={Styles.righttic}>
-                <Image src="/Assets/rights.png" alt="Next" width={18} height={12} />
-              </div>
+              <button
+                type="button"
+                onClick={() => swiperRef.current?.swiper.slidePrev()}
+                className={Styles.lefttic}
+                aria-label="Previous testimonial"
+              >
+                <Image src="/Assets/lefts.png" alt="" width={18} height={12} />
+              </button>
+              <button
+                type="button"
+                onClick={() => swiperRef.current?.swiper.slideNext()}
+                className={Styles.righttic}
+                aria-label="Next testimonial"
+              >
+                <Image src="/Assets/rights.png" alt="" width={18} height={12} />
+              </button>
             </div>
           </div>
 
@@ -55,19 +75,25 @@ export default function Testimon() {
               ref={swiperRef}
               spaceBetween={30}
               slidesPerView={1}
-              autoplay={{ delay: 4800, disableOnInteraction: false }}
+              autoplay={{ delay: 5200, disableOnInteraction: false }}
               loop={true}
               modules={[Autoplay]}
             >
               {testimonials.map((t, index) => (
                 <SwiperSlide key={index}>
                   <div className={Styles.slidercard}>
+                    <span className={Styles.industry}>{t.industry}</span>
                     <div className={Styles.cardtop}>
                       <p>“{t.quote}”</p>
                     </div>
                     <div className={Styles.cardbottom}>
                       <div className={Styles.botimg}>
-                        <Image src="/Assets/client1.png" alt={t.name + ' at ' + t.company} width={54} height={54} />
+                        <Image
+                          src="/Assets/client1.png"
+                          alt=""
+                          width={54}
+                          height={54}
+                        />
                       </div>
                       <div className={Styles.clientname}>
                         <span>{t.name}</span>

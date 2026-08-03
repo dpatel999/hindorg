@@ -1,10 +1,6 @@
-/* ============================================
-   CLASSIC PROFESSIONAL PRODUCTS / SERVICES
-   ============================================ */
-
 .SerWrapper {
-  background-color: var(--navy);
-  padding: 80px 20px 100px;
+  background: linear-gradient(180deg, var(--navy-dark) 0%, var(--navy) 100%);
+  padding: 72px 20px 100px;
 }
 
 .childwrapper {
@@ -12,108 +8,194 @@
   margin: 0 auto;
 }
 
-.fixwrapper {
-  background-color: var(--white);
-  padding: 48px 60px 60px;
-  border-radius: 3px;
-}
-
-.fixedbar {
+.statsBar {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
-  padding-bottom: 48px;
-  border-bottom: 1px solid var(--border);
+  gap: 16px;
+  margin-bottom: 36px;
 }
 
 .stat {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 24px 16px;
   text-align: center;
 }
 
 .stat span {
   font-family: var(--font-serif);
-  font-size: 42px;
+  font-size: 36px;
   font-weight: 600;
-  color: var(--navy);
+  color: var(--gold-light);
   line-height: 1;
-  margin-bottom: 4px;
+  display: block;
+  margin-bottom: 6px;
 }
 
 .stat p {
-  font-size: 12px;
-  letter-spacing: 1.5px;
+  font-size: 11px;
+  letter-spacing: 1.4px;
   text-transform: uppercase;
-  color: var(--text-muted);
-  margin-top: 4px;
+  color: rgba(255, 255, 255, 0.65);
 }
 
 .subwrapper {
-  margin-top: 52px;
+  background: var(--white);
+  padding: 48px 48px 52px;
+  border-radius: 2px;
 }
 
-.titlewrapper {
-  display: flex;
-  align-items: center;
-  gap: 16px;
+.kicker {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
   margin-bottom: 8px;
 }
 
 .Title {
   font-family: var(--font-serif);
-  font-size: 38px;
+  font-size: clamp(26px, 3.2vw, 36px);
   font-weight: 600;
-  color: var(--white);
-  letter-spacing: -0.015em;
+  color: var(--navy);
+  letter-spacing: -0.02em;
+  line-height: 1.15;
 }
 
 .Titlede {
-  width: 48px;
-  height: 1px;
-  background-color: var(--gold);
-  margin-top: 6px;
+  width: 56px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--gold), var(--gold-light));
+  margin: 14px 0 18px;
+}
+
+.intro {
+  color: var(--charcoal-light);
+  font-size: 15.5px;
+  line-height: 1.7;
+  max-width: 720px;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 28px 0 22px;
+}
+
+.filterBtn {
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  color: var(--charcoal-light);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  padding: 9px 14px;
+  cursor: pointer;
+  transition: all 180ms ease;
+  border-radius: 2px;
+  font-family: var(--font-sans);
+}
+
+.filterBtn:hover {
+  border-color: var(--gold);
+  color: var(--navy);
+}
+
+.filterActive {
+  background: var(--navy);
+  border-color: var(--navy);
+  color: var(--white);
 }
 
 .bottom {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 14px;
-  margin-top: 28px;
+  gap: 12px;
 }
 
-/* Mobile stats */
-.fixedbarm {
-  display: none;
+.note {
+  margin-top: 28px;
+  font-size: 14.5px;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+.note a {
+  color: var(--navy);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+@media (max-width: 900px) {
+  .bottom {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (max-width: 860px) {
   .SerWrapper {
-    padding: 60px 16px 80px;
+    padding: 40px 12px 64px;
   }
 
-  .fixwrapper {
-    padding: 36px 24px 40px;
-  }
-
-  .fixedbar {
-    display: none;
-  }
-
-  .fixedbarm {
-    display: grid;
+  .statsBar {
     grid-template-columns: 1fr 1fr;
-    gap: 24px;
-    margin-bottom: 32px;
+    gap: 8px;
+    margin-bottom: 20px;
   }
 
-  .Title {
-    font-size: 28px;
+  .stat {
+    padding: 16px 10px;
+  }
+
+  .stat span {
+    font-size: clamp(24px, 7vw, 28px);
+  }
+
+  .stat p {
+    font-size: 10px;
+    letter-spacing: 1px;
+  }
+
+  .subwrapper {
+    padding: 24px 14px 28px;
+  }
+
+  .intro {
+    font-size: 14.5px;
+  }
+
+  .filters {
+    margin: 20px 0 16px;
+    gap: 6px;
+  }
+
+  .filterBtn {
+    font-size: 11px;
+    padding: 8px 11px;
   }
 
   .bottom {
     grid-template-columns: 1fr;
     gap: 10px;
+  }
+
+  .note {
+    font-size: 13.5px;
+    margin-top: 22px;
+    line-height: 1.55;
+  }
+}
+
+@media (max-width: 400px) {
+  .statsBar {
+    gap: 6px;
+  }
+
+  .SerWrapper {
+    padding: 36px 10px 56px;
   }
 }

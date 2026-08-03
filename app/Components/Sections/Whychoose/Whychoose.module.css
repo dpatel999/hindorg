@@ -1,9 +1,5 @@
-/* ============================================
-   CLASSIC PROFESSIONAL WHY CHOOSE US
-   ============================================ */
-
 .mainwcuwrapper {
-  padding: 90px 20px;
+  padding: var(--section-pad) 20px;
   background-color: var(--white);
 }
 
@@ -14,63 +10,101 @@
 
 .titlewrapper {
   text-align: center;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 
 .contentwcu {
-  max-width: 720px;
-  margin: 0 auto 52px;
+  max-width: 740px;
+  margin: 0 auto 48px;
   text-align: center;
   font-size: 16px;
   color: var(--charcoal-light);
-  line-height: 1.7;
+  line-height: 1.75;
 }
 
 .cardwrapper {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 20px;
+  gap: 14px;
 }
 
 .card {
   background-color: var(--cream);
   border: 1px solid var(--border);
-  padding: 28px 22px;
-  text-align: center;
-  transition: all 200ms ease;
+  padding: 26px 18px 28px;
+  text-align: left;
+  transition: all var(--transition);
 }
 
 .card:hover {
   border-color: var(--gold);
-  transform: translateY(-2px);
+  background: var(--white);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
 }
 
-.card span {
-  display: block;
-  margin-top: 18px;
+.iconWrap {
+  height: 42px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.card h3 {
   font-family: var(--font-serif);
   font-size: 17px;
   font-weight: 600;
   color: var(--navy);
   line-height: 1.3;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: var(--charcoal-light);
+}
+
+@media (max-width: 1100px) {
+  .cardwrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media (max-width: 860px) {
   .mainwcuwrapper {
-    padding: 60px 20px;
+    padding: var(--section-pad-m) 16px;
   }
 
   .cardwrapper {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 14px;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
   }
 
   .card {
-    padding: 22px 16px;
+    padding: 18px 14px;
   }
 
-  .card span {
-    font-size: 15.5px;
-    margin-top: 14px;
+  .card h3 {
+    font-size: 15px;
+  }
+
+  .card p {
+    font-size: 12.5px;
+  }
+
+  .contentwcu {
+    margin-bottom: 28px;
+    font-size: 14.5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cardwrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 20px 16px;
   }
 }

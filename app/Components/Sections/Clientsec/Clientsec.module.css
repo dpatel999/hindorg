@@ -1,10 +1,8 @@
-/* ============================================
-   CLASSIC PROFESSIONAL CLIENTS
-   ============================================ */
-
 .clientmain {
-  background-color: var(--cream);
-  padding: 70px 20px;
+  background-color: var(--white);
+  padding: 72px 20px;
+  border-top: 1px solid var(--border-light);
+  border-bottom: 1px solid var(--border-light);
 }
 
 .childwrapper {
@@ -12,28 +10,63 @@
   margin: 0 auto;
 }
 
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header p {
+  margin-top: 8px;
+  font-size: 15px;
+  color: var(--charcoal-light);
+}
+
+.marqueeWrap {
+  overflow: hidden;
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+
 .clientimgwrapper {
   display: flex;
   align-items: center;
-  gap: 32px;
-  animation: scroll-grid 42s linear infinite;
+  gap: 20px;
+  width: max-content;
+  animation: scroll-grid 36s linear infinite;
+}
+
+.clientimgwrapper:hover {
+  animation-play-state: paused;
 }
 
 .clientimgcard {
-  background-color: var(--white);
+  background-color: var(--cream);
   border: 1px solid var(--border);
-  padding: 22px 38px;
+  padding: 20px 36px;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 160px;
-  height: 92px;
+  min-width: 168px;
+  height: 88px;
   flex-shrink: 0;
+  transition: border-color 180ms ease;
+}
+
+.clientimgcard:hover {
+  border-color: var(--gold);
+  background: var(--white);
 }
 
 @keyframes scroll-grid {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-52%); }
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .clientimgwrapperm {
@@ -42,26 +75,34 @@
 
 @media (max-width: 860px) {
   .clientmain {
-    padding: 50px 20px;
+    padding: 48px 16px;
   }
 
-  .clientimgwrapper {
+  .header {
+    margin-bottom: 28px;
+  }
+
+  .header p {
+    font-size: 14px;
+  }
+
+  .marqueeWrap {
     display: none;
   }
 
   .clientimgwrapperm {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
+    gap: 10px;
   }
 
   .whitebgm {
-    background-color: var(--white);
+    background-color: var(--cream);
     border: 1px solid var(--border);
-    padding: 18px 24px;
+    padding: 14px 12px;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 82px;
+    height: 76px;
   }
 }

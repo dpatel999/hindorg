@@ -5,7 +5,6 @@ import Styles from './Card.module.css';
 export default function Card({ datasr }) {
   const [isOpen, setIsOpen] = useState(false);
 
-  // ESC key support for modal
   useEffect(() => {
     if (!isOpen) return;
 
@@ -13,7 +12,12 @@ export default function Card({ datasr }) {
       if (e.key === 'Escape') setIsOpen(false);
     };
     window.addEventListener('keydown', handleEsc);
-    return () => window.removeEventListener('keydown', handleEsc);
+    document.body.style.overflow = 'hidden';
+
+    return () => {
+      window.removeEventListener('keydown', handleEsc);
+      document.body.style.overflow = '';
+    };
   }, [isOpen]);
 
   return (
@@ -23,11 +27,17 @@ export default function Card({ datasr }) {
         onClick={() => setIsOpen(true)}
         role="button"
         tabIndex={0}
-        aria-label={`View details for ${datasr.name}`}
+        aria-label={`View details for ${datasr.name}${datasr.cas ? `, CAS ${datasr.cas}` : ''}`}
         onKeyDown={(e) => e.key === 'Enter' && setIsOpen(true)}
       >
-        <span>{datasr.name}</span>
-        <span className={Styles.arrow}>→</span>
+        <div className={Styles.cardBody}>
+          {datasr.category && <span className={Styles.category}>{datasr.category}</span>}
+          <span className={Styles.name}>{datasr.name}</span>
+          {datasr.cas && <span className={Styles.cas}>CAS {datasr.cas}</span>}
+        </div>
+        <span className={Styles.arrow} aria-hidden="true">
+          →
+        </span>
       </div>
 
       {isOpen && (
@@ -40,22 +50,31 @@ export default function Card({ datasr }) {
         >
           <div className={Styles.content} onClick={(e) => e.stopPropagation()}>
             <div className={Styles.titlewsvg}>
-              <span>{datasr.name}</span>
+              <div>
+                {datasr.category && <span className={Styles.modalCat}>{datasr.category}</span>}
+                <span className={Styles.modalTitle}>{datasr.name}</span>
+                {datasr.cas && <span className={Styles.modalCas}>CAS Registry No. {datasr.cas}</span>}
+              </div>
             </div>
             <div className={Styles.uline} />
             <div className={Styles.descinner}>
               {datasr.description.map((item, index) => (
-                <p key={index}>• {item}</p>
+                <p key={index}>
+                  <span className={Styles.bullet}>•</span> {item}
+                </p>
               ))}
             </div>
-            <div
-              className={Styles.close}
-              onClick={() => setIsOpen(false)}
-              role="button"
-              tabIndex={0}
-              onKeyDown={(e) => e.key === 'Enter' && setIsOpen(false)}
-            >
-              Close
+            <div className={Styles.modalActions}>
+              <a href="#inquiry" className={Styles.quoteBtn} onClick={() => setIsOpen(false)}>
+                Request Quote
+              </a>
+              <button
+                type="button"
+                className={Styles.close}
+                onClick={() => setIsOpen(false)}
+              >
+                Close
+              </button>
             </div>
           </div>
         </div>
@@ -63,4 +82,3 @@ export default function Card({ datasr }) {
     </>
   );
 }
-

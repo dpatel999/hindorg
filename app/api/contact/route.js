@@ -100,7 +100,7 @@ export async function POST(request) {
           <p style="margin-top: 32px; font-size: 14px; color: #0B1D36;">
             Best regards,<br />
             <strong>Hindustan Organics</strong><br />
-            +91 94270 50266 | sales@hindorg.com
+            +91 94270 50266 | hindorg@gmail.com
           </p>
         </div>
       `,

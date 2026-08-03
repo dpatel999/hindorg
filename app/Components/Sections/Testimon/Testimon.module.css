@@ -1,9 +1,5 @@
-/* ============================================
-   CLASSIC PROFESSIONAL TESTIMONIALS
-   ============================================ */
-
 .testimonwrapper {
-  padding: 90px 20px;
+  padding: var(--section-pad) 20px;
   background-color: var(--cream);
 }
 
@@ -13,64 +9,87 @@
 }
 
 .titlewrapper {
-  margin-bottom: 48px;
+  margin-bottom: 44px;
 }
 
 .testcont {
   display: grid;
-  grid-template-columns: 360px 1fr;
-  gap: 60px;
+  grid-template-columns: 340px 1fr;
+  gap: 56px;
   align-items: center;
 }
 
 .leftcont span {
   font-family: var(--font-serif);
-  font-size: 38px;
+  font-size: clamp(26px, 3vw, 36px);
   font-weight: 600;
   color: var(--navy);
-  line-height: 1.15;
+  line-height: 1.2;
   display: block;
   max-width: 320px;
 }
 
+.leftSub {
+  margin-top: 16px;
+  font-size: 14.5px;
+  line-height: 1.65;
+  color: var(--charcoal-light);
+  max-width: 300px;
+}
+
 .leftslidtap {
   display: flex;
-  gap: 12px;
+  gap: 10px;
   margin-top: 28px;
 }
 
-.lefttic, .righttic {
-  width: 42px;
-  height: 42px;
+.lefttic,
+.righttic {
+  width: 44px;
+  height: 44px;
   background-color: var(--navy);
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   transition: background-color 200ms ease;
+  border: none;
+  padding: 0;
 }
 
-.lefttic:hover, .righttic:hover {
+.lefttic:hover,
+.righttic:hover {
   background-color: var(--gold);
 }
 
 .right {
-  max-width: 620px;
+  max-width: 640px;
 }
 
 .slidercard {
   background-color: var(--white);
   border: 1px solid var(--border);
-  padding: 42px 46px;
-  min-height: 220px;
+  padding: 36px 40px;
+  min-height: 260px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  box-shadow: var(--shadow-sm);
+}
+
+.industry {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 14px;
 }
 
 .cardtop p {
   font-size: 17px;
-  line-height: 1.65;
+  line-height: 1.7;
   color: var(--charcoal);
   font-style: italic;
 }
@@ -78,16 +97,19 @@
 .cardbottom {
   display: flex;
   align-items: center;
-  gap: 16px;
-  margin-top: 32px;
+  gap: 14px;
+  margin-top: 28px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border-light);
 }
 
 .botimg {
-  width: 54px;
-  height: 54px;
+  width: 52px;
+  height: 52px;
   border-radius: 50%;
   overflow: hidden;
   border: 1px solid var(--border);
+  flex-shrink: 0;
 }
 
 .clientname span {
@@ -105,21 +127,38 @@
 
 @media (max-width: 860px) {
   .testimonwrapper {
-    padding: 60px 20px;
+    padding: var(--section-pad-m) 16px;
+  }
+
+  .titlewrapper {
+    margin-bottom: 28px;
   }
 
   .testcont {
     grid-template-columns: 1fr;
-    gap: 36px;
+    gap: 22px;
   }
 
   .leftcont span {
-    font-size: 28px;
     max-width: 100%;
+    font-size: clamp(22px, 6vw, 28px);
+  }
+
+  .leftSub {
+    max-width: 100%;
+    font-size: 14px;
   }
 
   .slidercard {
-    padding: 28px 26px;
+    padding: 22px 16px;
     min-height: auto;
+  }
+
+  .cardtop p {
+    font-size: 15px;
+  }
+
+  .leftslidtap {
+    margin-top: 18px;
   }
 }

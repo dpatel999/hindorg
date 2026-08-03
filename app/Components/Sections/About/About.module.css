@@ -1,9 +1,5 @@
-/* ============================================
-   CLASSIC PROFESSIONAL ABOUT
-   ============================================ */
-
 .aboutwrapper {
-  padding: 80px 20px;
+  padding: var(--section-pad) 20px;
   background-color: var(--cream);
 }
 
@@ -11,46 +7,72 @@
   max-width: var(--container);
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 64px;
   align-items: start;
-}
-
-.left {
-  color: var(--charcoal);
 }
 
 .about_title {
   font-family: var(--font-serif);
-  font-size: 42px;
+  font-size: clamp(28px, 3.5vw, 40px);
   font-weight: 600;
   color: var(--navy);
   letter-spacing: -0.02em;
+  line-height: 1.15;
   margin-bottom: 8px;
 }
 
 .about_text {
-  font-size: 16px;
+  font-size: 15.5px;
   line-height: 1.75;
   color: var(--charcoal-light);
-  max-width: 520px;
+  margin-top: 16px;
+}
+
+.about_text strong {
+  color: var(--navy);
+  font-weight: 600;
+}
+
+.exportBlock {
+  margin-top: 36px;
+  padding: 28px 26px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--gold);
+}
+
+.exportBadge {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 8px;
+}
+
+.exportTitle {
+  font-family: var(--font-serif);
+  font-size: 22px;
+  color: var(--navy);
+  margin-bottom: 4px;
 }
 
 .right {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 20px;
 }
 
 .vision_mission {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 24px;
+  gap: 16px;
 }
 
 .vm_card {
   background-color: var(--white);
-  padding: 28px 24px;
+  padding: 26px 22px;
   border: 1px solid var(--border);
   position: relative;
 }
@@ -60,17 +82,16 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 4px;
+  width: 3px;
   height: 100%;
-  background-color: var(--gold);
+  background: linear-gradient(180deg, var(--gold), var(--gold-light));
 }
 
 .vm_label {
   font-family: var(--font-serif);
-  font-size: 22px;
+  font-size: 20px;
   color: var(--navy);
-  margin-bottom: 12px;
-  letter-spacing: -0.01em;
+  margin-bottom: 10px;
 }
 
 .vm_text {
@@ -79,37 +100,90 @@
   color: var(--charcoal-light);
 }
 
-/* Logo block */
+.factsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.fact {
+  background: var(--navy);
+  color: var(--white);
+  padding: 20px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.fact strong {
+  font-family: var(--font-serif);
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--gold-light);
+}
+
+.fact span {
+  font-size: 12px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  opacity: 0.75;
+}
+
 .brand_block {
   background-color: var(--white);
   border: 1px solid var(--border);
-  padding: 32px;
+  padding: 28px 24px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 8px;
+  gap: 12px;
+  text-align: center;
+}
+
+.brand_block p {
+  font-size: 13px;
+  color: var(--text-muted);
+  letter-spacing: 0.3px;
 }
 
 @media (max-width: 860px) {
   .aboutwrapper {
-    padding: 60px 20px;
+    padding: var(--section-pad-m) 16px;
   }
 
   .childwrapper {
     grid-template-columns: 1fr;
-    gap: 48px;
-  }
-
-  .about_title {
-    font-size: 32px;
+    gap: 32px;
   }
 
   .vision_mission {
     grid-template-columns: 1fr;
   }
 
+  .exportBlock {
+    padding: 20px 16px;
+  }
+
   .about_text {
     font-size: 15px;
-    max-width: 100%;
+  }
+
+  .fact strong {
+    font-size: 18px;
+  }
+
+  .brand_block {
+    padding: 22px 16px;
+  }
+}
+
+@media (max-width: 400px) {
+  .factsGrid {
+    gap: 8px;
+  }
+
+  .fact {
+    padding: 16px 12px;
   }
 }

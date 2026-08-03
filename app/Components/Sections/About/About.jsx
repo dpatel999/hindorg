@@ -6,50 +6,75 @@ export default function About() {
   return (
     <div className={Styles.aboutwrapper}>
       <div className={Styles.childwrapper}>
-        {/* Left: Text Content */}
         <div className={Styles.left}>
           <span className="section-subtitle">Our Heritage</span>
-          <h2 className={Styles.about_title}>About Hindustan Organics</h2>
+          <h2 className={Styles.about_title}>
+            Nearly Three Decades of Reliable Chemistry from Gujarat
+          </h2>
           <div className="section-divider" />
           <p className={Styles.about_text}>
-            For nearly three decades, Hindustan Organics has been a trusted partner to India's leading manufacturers — supplying high-purity solvents and specialty chemicals with uncompromising consistency and integrity.
+            Hindustan Organics is a trusted manufacturer and supplier of high-purity industrial
+            solvents and specialty chemicals based in Naroda GIDC, Ahmedabad. Since 1995, we have
+            partnered with pharmaceutical, paint & coatings, adhesive, rubber, and manufacturing
+            companies across India — delivering consistent quality, technical clarity, and dependable
+            supply.
           </p>
-          <p className={Styles.about_text} style={{ marginTop: '18px' }}>
-            Our family’s values of discipline, precision, and long-term relationships guide every decision we make. These same values, strengthened by the blessings and prayers of the revered SMVS Gurudev, have shaped our son Haresh Kanubhai Patel into a source of immense strength and inspiration for our family and our business.
+          <p className={Styles.about_text}>
+            Our family-led values of discipline, precision, and long-term relationships guide every
+            batch we release. Those same values, strengthened by the blessings and prayers of the
+            revered SMVS Gurudev, have shaped Haresh Kanubhai Patel into a source of strength and
+            inspiration for our family and our business.
           </p>
 
-          {/* Canada Import & Export Section - Highlighting X9Elysium + Darshan Patel */}
-          <div style={{ 
-            marginTop: '42px', 
-            paddingTop: '28px', 
-            borderTop: '1px solid var(--border)' 
-          }}>
-            <div style={{ fontFamily: 'var(--font-serif)', fontSize: '21px', color: 'var(--navy)', marginBottom: '12px' }}>
-              Building Bridges to Canada
-            </div>
-            <p className={Styles.about_text} style={{ maxWidth: '100%' }}>
-              In our ongoing pursuit of excellence and global reach, Hindustan Organics has established reliable import and export channels to Canada. This important expansion has been made possible through our valued partnership with <strong>X9Elysium</strong> and the dedicated technical leadership and vision of <strong>Darshan Patel</strong>.
+          <div className={Styles.exportBlock}>
+            <div className={Styles.exportBadge}>How We Work</div>
+            <h3 className={Styles.exportTitle}>Specification-Driven Supply Across India</h3>
+            <p className={Styles.about_text}>
+              From Naroda GIDC in Ahmedabad, we serve manufacturers across Gujarat, Maharashtra,
+              Rajasthan, Delhi-NCR, and beyond — with clear grades, dependable packing options, and
+              logistics partners who understand industrial timelines.
             </p>
-            <p className={Styles.about_text} style={{ maxWidth: '100%', marginTop: '14px' }}>
-              Darshan Patel has played a pivotal role in developing these international operations — ensuring seamless logistics, strict quality compliance, and the creation of sustainable trade relationships that allow us to serve North American customers while bringing advanced materials and technologies back to India.
+            <p className={Styles.about_text}>
+              Unlike pure traders, we combine refining capability, in-house QC, and specification-driven
+              supply — the model industrial buyers prefer when uptime and batch consistency matter.
             </p>
           </div>
         </div>
 
-        {/* Right: Vision & Mission + Brand */}
         <div className={Styles.right}>
           <div className={Styles.vision_mission}>
             <div className={Styles.vm_card}>
               <div className={Styles.vm_label}>Vision</div>
               <p className={Styles.vm_text}>
-                To be the most respected and reliable name in industrial chemicals, recognized for uncompromising quality and integrity.
+                To be the most respected and reliable name in industrial solvents — recognized for
+                uncompromising quality, integrity, and global readiness.
               </p>
             </div>
             <div className={Styles.vm_card}>
               <div className={Styles.vm_label}>Mission</div>
               <p className={Styles.vm_text}>
-                To consistently deliver superior chemical products through rigorous quality processes, technical excellence, and lasting client relationships.
+                To deliver superior chemical products through rigorous quality processes, technical
+                excellence, and lasting client relationships.
               </p>
+            </div>
+          </div>
+
+          <div className={Styles.factsGrid}>
+            <div className={Styles.fact}>
+              <strong>1995</strong>
+              <span>Established</span>
+            </div>
+            <div className={Styles.fact}>
+              <strong>Ahmedabad</strong>
+              <span>Naroda GIDC HQ</span>
+            </div>
+            <div className={Styles.fact}>
+              <strong>500+</strong>
+              <span>Active Customers</span>
+            </div>
+            <div className={Styles.fact}>
+              <strong>40+</strong>
+              <span>Product Grades</span>
             </div>
           </div>
 
@@ -61,6 +86,7 @@ export default function About() {
               height={56}
               objectFit="contain"
             />
+            <p>High-purity solvents · Specialty chemicals · Specification-driven supply</p>
           </div>
         </div>
       </div>

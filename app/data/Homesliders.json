@@ -1,23 +1,23 @@
 [
-    {
-        "id": 1,
-        "Title1": "Reliable Chemistry.",
-        "Title2": "Trusted by India's Leading Manufacturers",
-        "img": "/Assets/Slider/slide1.jpeg",
-        "alt": "Hindustan Organics - High Purity Industrial Solvents"
-    },
-    {
-        "id": 2,
-        "Title1": "High-Purity Solvents.",
-        "Title2": "Consistent Quality. On-Time Delivery.",
-        "img": "/Assets/Slider/slide2.jpeg",
-        "alt": "Hindustan Organics - Industrial Chemicals Supplier"
-    },
-    {
-        "id": 3,
-        "Title1": "Your Partner in",
-        "Title2": "Precision Chemical Supply",
-        "img": "/Assets/Slider/slide3.jpeg",
-        "alt": "Hindustan Organics - Specialty Chemicals Manufacturer"
-    }
+  {
+    "id": 1,
+    "Title1": "High-Purity Solvents.",
+    "Title2": "Engineered for India's Leading Manufacturers",
+    "img": "/Assets/Slider/slide1.jpeg",
+    "alt": "Hindustan Organics high-purity industrial solvents manufacturing Ahmedabad"
+  },
+  {
+    "id": 2,
+    "Title1": "Consistent Quality.",
+    "Title2": "Rigorous QC. Reliable Pan-India Supply.",
+    "img": "/Assets/Slider/slide2.jpeg",
+    "alt": "Quality-controlled industrial chemicals supplier Gujarat"
+  },
+  {
+    "id": 3,
+    "Title1": "From Gujarat to India.",
+    "Title2": "Domestic Strength. Specification-Driven Supply.",
+    "img": "/Assets/Slider/slide3.jpeg",
+    "alt": "Hindustan Organics industrial solvents manufacturer Ahmedabad Gujarat"
+  }
 ]

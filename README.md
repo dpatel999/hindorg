@@ -7,30 +7,39 @@ Hindustan Organics is a Gujarat-based manufacturer and supplier of high-purity i
 **Website:** [https://www.hindorg.com](https://www.hindorg.com)
 
 ## Core Business
-- High-purity solvents (Methylene Dichloride, IPA, Toluene, Acetonitrile, Ethyl Acetate, EDC, n-Hexane, Cyclohexane, THF, and custom blends)
+- High-purity solvents (Methylene Dichloride, IPA, Toluene, Acetonitrile, Ethyl Acetate, EDC, n-Hexane, Cyclohexane, THF, DMF, and custom blends)
 - Rigorous in-house quality control (GC, moisture, visual)
 - Strong focus on low-moisture and high-purity grades for critical applications
-- North American expansion through our child/sister company **X9Elysium** (Canada & USA imports/exports)
+- Pan-India supply from Naroda GIDC, Ahmedabad
 
-## Strategic Direction
-- Deepen domestic market leadership in high-purity chemicals
-- Scale organized exports to North America via X9Elysium
-- Professionalize operations and governance in preparation for future public listing ambitions
-- Build long-term, trust-based relationships with mid-to-large industrial buyers
+## Website (this repo)
+Corporate site built with **Next.js 13 (App Router)** — premium industrial B2B design with:
 
-## This Repository
-This is the official corporate website for Hindustan Organics (classic professional design with ongoing evolution toward a premium, high-tech aesthetic).
+- Full-bleed hero with dual CTAs and trust metrics
+- Industries served, product catalogue with CAS + category filters
+- Quality process, competitive differentiators, FAQ (GEO-ready)
+- Local SEO (NAP + geo meta + LocalBusiness schema)
+- Blog/insights on automation, taxation, and chemical manufacturing
+- Inquiry form (Resend API) + WhatsApp CTA
+
+### Develop
+```bash
+npm install
+npm run dev
+```
+
+### Build
+```bash
+npm run build
+npm start
+```
 
 ## Key Highlights
 - 500+ customers across India
-- 40+ products
-- Strong family values and operational discipline
-- Active expansion into Canada & USA through X9Elysium
+- 40+ product grades
+- Family-led operational discipline since 1995
+- Based in Naroda GIDC, Ahmedabad, Gujarat
 
-## Authors
-- Darshan Patel (Technical Lead & International Expansion)
-- Haresh Patel (Director)
-
----
-
-**Note:** This is the live corporate website project. The older "marketplace" concept described in previous versions of this README has been retired. The current focus is on direct manufacturing, quality, and international growth.
+## Partners
+- Haresh Patel — Partner & Director (Leadership · Operations · Governance)
+- Pankaj Patel — Partner & Manager (Operations · Customer Fulfilment)

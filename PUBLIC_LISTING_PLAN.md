@@ -8,7 +8,7 @@
 
 - **Business:** Manufacturer & supplier of high-purity industrial solvents and specialty chemicals
 - **Location:** Naroda GIDC, Ahmedabad, Gujarat
-- **Strengths:** Consistent quality, strong customer relationships, family discipline, growing export vision via X9Elysium (Canada/USA)
+- **Strengths:** Consistent quality, strong customer relationships, family discipline, growing export vision
 - **Current Challenges:** 
   - Limited public brand visibility
   - Need for stronger corporate governance & professional management layers
@@ -19,7 +19,7 @@
 
 ## 2. Core Value Drivers for Public Market
 
-1. **X9Elysium (North America Play)** – This is the biggest asymmetric upside. A credible, scalable India-to-Canada/USA chemical supply channel can dramatically increase valuation multiples.
+1. **international expansion (North America Play)** – This is the biggest asymmetric upside. A credible, scalable India-to-Canada/USA chemical supply channel can dramatically increase valuation multiples.
 2. **High-Purity & Specialty Focus** – Moving up the value chain (pharma-grade, low-moisture, custom blends) instead of competing only on commodity solvents.
 3. **Quality & Compliance Track Record** – This becomes a moat and proof point for larger customers and regulators.
 4. **Scalable Manufacturing + Distribution Model** – Ability to grow volume without proportional increase in complexity.
@@ -32,7 +32,7 @@
 |---------|------------------|--------|
 | Clean 3-year audited financials with 25%+ CAGR | 2026–2027 | In progress |
 | Professional CFO + independent directors | 2026 | To be done |
-| X9Elysium generating meaningful export revenue (₹25–40 Cr+) | 2027 | Early stage |
+| international expansion generating meaningful export revenue (₹25–40 Cr+) | 2027 | Early stage |
 | Formal corporate governance (board, ESOP, policies) | 2026 | To be done |
 | Diversified customer base (reduce top-5 concentration) | 2026–27 | Ongoing |
 | SEBI-compliant DRHP readiness (legal, accounting, disclosures) | 2028 | Future |
@@ -45,11 +45,11 @@
 ### Phase 1: Foundation (2025–2026)
 - Professionalize finance & reporting (Big 4 auditor, monthly MIS, proper working capital management)
 - Hire experienced CFO and strengthen middle management
-- Formalize X9Elysium as a clear subsidiary / strategic vehicle with proper agreements
+- Formalize international expansion as a clear subsidiary / strategic vehicle with proper agreements
 - Begin building public narrative (website, LinkedIn, industry presence, quality certifications)
 
 ### Phase 2: Scale & Visibility (2027–2028)
-- Drive X9Elysium revenue aggressively (target: become a recognized India–North America chemical bridge)
+- Drive international expansion revenue aggressively (target: become a recognized broader industrial growth story)
 - Launch more value-added products and contract manufacturing opportunities
 - Improve EBITDA margins through operational discipline and product mix
 - Start investor relations activity (participate in industry conferences, selective media)
@@ -64,7 +64,7 @@
 
 ## 5. Critical Success Factors
 
-- **X9Elysium Execution** — This single initiative can move the company from "good regional player" to "serious growth story."
+- **international expansion Execution** — This single initiative can move the company from "good regional player" to "serious growth story."
 - **Governance & Professionalism** — Public markets punish family businesses that refuse to professionalize.
 - **Consistent Quality + Documentation** — Everything must be auditable and defensible.
 - **Narrative** — We must clearly articulate why we are different (quality + international ambition + family discipline).
@@ -82,7 +82,7 @@
 
 ---
 
-## 7. Darshan Patel's Role (Founder Perspective)
+## 7. Leadership Transition (Founder Perspective)
 
 You are currently the visible face of international expansion and technical credibility. For a public listing, your role will likely evolve into:
 - Strategic & international growth leader
@@ -95,18 +95,18 @@ This is one of the most important personal transitions required.
 
 **Bottom line (Gator mode):**
 
-If you want to take this company public, the website and X9Elysium story are good branding moves — but they are table stakes.
+If you want to take this company public, the website and international expansion story are good branding moves — but they are table stakes.
 
 The real work is:
 1. Make the numbers clean and growing.
 2. Professionalize the company like your life depends on it.
-3. Execute X9Elysium so hard that it becomes impossible to ignore.
+3. Execute international expansion so hard that it becomes impossible to ignore.
 
 Everything else is secondary.
 
 ---
 
-**Document Owner:** Darshan Patel  
+**Document Owner:** Hindustan Organics Leadership  
 **Last Updated:** April 2026  
 **Review Frequency:** Every 6 months
 

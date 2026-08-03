@@ -1,30 +1,30 @@
-export default function sitemap() {
-  const baseUrl = 'https://www.hindorg.com';
+import { automationTaxationBlogs } from './data/blogs-automation-taxation'
 
-  return [
+export default function sitemap() {
+  const baseUrl = 'https://www.hindorg.com'
+  const now = new Date()
+
+  const staticPages = [
     {
       url: baseUrl,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
+      lastModified: now,
+      changeFrequency: 'weekly',
       priority: 1,
     },
     {
-      url: `${baseUrl}/#about`,
-      lastModified: new Date(),
-      changeFrequency: 'yearly',
+      url: `${baseUrl}/blog`,
+      lastModified: now,
+      changeFrequency: 'weekly',
       priority: 0.8,
     },
-    {
-      url: `${baseUrl}/#services`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/#contact`,
-      lastModified: new Date(),
-      changeFrequency: 'yearly',
-      priority: 0.7,
-    },
-  ];
+  ]
+
+  const blogPages = automationTaxationBlogs.map((post) => ({
+    url: `${baseUrl}/blog/${post.slug}`,
+    lastModified: post.date ? new Date(post.date) : now,
+    changeFrequency: 'yearly',
+    priority: 0.55,
+  }))
+
+  return [...staticPages, ...blogPages]
 }
